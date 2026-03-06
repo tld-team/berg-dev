@@ -2,7 +2,7 @@
   "name": "berg",
   "version": "1.0.0",
   "main": "sw-emergency.js",
-   "scripts": {
+  "scripts": {
     "sass:watch": "sass --watch assets/sass/style.scss:assets/css/style.css --style=expanded",
     "sass:build": "sass assets/sass/style.scss:assets/css/style.css --style=compressed"
   },
@@ -20,5 +20,6 @@
   "description": "",
   "devDependencies": {
     "sass": "^1.97.3"
-  }
+  },
+  "type": "commonjs"
 }
