@@ -18,6 +18,7 @@ $authText = $isUserLoggedIn ? 'Odjava' : 'Prijava';
 function h(string $s): string {
   return htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
+// opcionalno: za redirect nazad na istu stranicu posle logout-a
 ?>
 
 <!DOCTYPE html>
@@ -35,6 +36,7 @@ function h(string $s): string {
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <!-- Favicons -->
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/berg-membership-program-ig.svg" />
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/berg-membership-program-ig.svg" />
