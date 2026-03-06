@@ -1,0 +1,183 @@
+.vs-activities {
+  position: relative;
+}
+.activities-icon-1 {
+  position: absolute;
+  bottom: -5px;
+  left: 100px;
+
+  @include respond-below(xl) {
+    bottom: -5px;
+    left: 50px;
+  }
+  @include respond-below(lg) {
+    bottom: -5px;
+    left: 20px;
+  }
+  @include respond-below(md) {
+    display: none;
+  }
+}
+.activities-box {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+
+  .activities-thumb {
+    img {
+      @include smooth-transition;
+      object-fit: cover;
+
+      @include respond-below(sm) {
+        min-height: 516px;
+      }
+      @include respond-below(x) {
+        min-height: 280px;
+      }
+    }
+  }
+  .activities-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 32px;
+    
+
+    .title {
+      color: $white-color;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+    .info {
+      color: $theme-color;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.48px;
+      text-transform: capitalize;
+    }
+  }
+
+  &:hover {
+    .activities-thumb {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* =========================================================
+   Benefits tiles: hover overlay (rgba(0,0,0,0.3) + ease)
+   ========================================================= */
+
+.activities-box .activities-thumb{
+  position: relative;
+  overflow: hidden; /* da overlay ne izlazi van radiusa */
+}
+
+/* overlay */
+.activities-box .activities-thumb::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+  pointer-events: none;
+}
+
+/* hover/ focus */
+.activities-box:hover .activities-thumb::after,
+.activities-box:focus-within .activities-thumb::after{
+  opacity: 1;
+}
+
+/* CTA button inside benefit tile - show on hover */
+.activities-box.benefit-tile .benefit-tile-cta{
+  display: block;
+  margin-top: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+  pointer-events: none; /* da ne hvata klik dok je sakriveno */
+}
+
+.activities-box.benefit-tile:hover .benefit-tile-cta,
+.activities-box.benefit-tile:focus-within .benefit-tile-cta{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Benefit tile overlay – content unutar slike */
+.activities-box.benefit-tile {
+  cursor: pointer;
+}
+
+.activities-box.benefit-tile .activities-thumb{
+  position: relative;
+  overflow: hidden; /* da overlay ostane u okviru slike */
+}
+
+/* crni overlay na hover (0.3) */
+.activities-box.benefit-tile .activities-thumb::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background .35s ease-in-out;
+  z-index: 1;
+}
+
+.activities-box.benefit-tile:hover .activities-thumb::after,
+.activities-box.benefit-tile:focus-within .activities-thumb::after{
+  background: rgba(0,0,0,0.3);
+}
+
+/* content na dnu slike */
+.activities-box.benefit-tile .activities-content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 22px 22px 18px;
+  z-index: 2;
+  color: #fff;
+}
+
+.activities-box.benefit-tile .activities-content .title{
+  color: #fff;
+}
+
+/* info + dugme se pojavljuju na hover (smooth) */
+.activities-box.benefit-tile .activities-content .info,
+.activities-box.benefit-tile .benefit-tile-cta{
+  display: block;
+  opacity: 0;
+  transform: translateY(10px);
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: opacity .35s ease-in-out, transform .35s ease-in-out, max-height .35s ease-in-out;
+}
+
+.activities-box.benefit-tile:hover .activities-content .info,
+.activities-box.benefit-tile:hover .benefit-tile-cta,
+.activities-box.benefit-tile:focus-within .activities-content .info,
+.activities-box.benefit-tile:focus-within .benefit-tile-cta{
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 220px;
+  pointer-events: auto;
+}
+
+.activities-box.benefit-tile .benefit-tile-cta{
+  margin-top: 14px;
+}
+
+.activities-box.benefit-tile .benefit-tile-cta .vs-btn{
+  width: max-content;
+}
+

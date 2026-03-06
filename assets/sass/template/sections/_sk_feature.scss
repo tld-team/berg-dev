@@ -1,0 +1,305 @@
+.vs-feature-style1 {
+  padding-block: 100px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  .container {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -45px;
+      transform: skewX(-25deg) translateY(-50%);
+      width: 533px;
+      height: 83px;
+      background-color: var(--second-theme-color);
+      z-index: -1;
+
+      @include respond-below(xlg) {
+        width: 480px;
+        height: 60px;
+      }
+
+      @include respond-below(lg) {
+        width: 400px;
+        height: 60px;
+      }
+
+      @include respond-below(sm) {
+        content: unset;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      transform: skewX(-25deg) translateX(-100%) translateY(-50%);
+      width: 10000px;
+      height: 83px;
+      background-color: var(--second-theme-color);
+      z-index: -1;
+
+      @include respond-below(xlg) {
+        height: 60px;
+      }
+
+      @include respond-below(lg) {
+        height: 60px;
+      }
+
+      @include respond-below(sm) {
+        content: unset;
+      }
+    }
+  }
+
+  h2 {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    text-shadow: 0px 4px 4px rgba(var(--black-color-rgb), 0.25);
+    font-size: 50px;
+    line-height: 0.78;
+    text-transform: capitalize;
+    opacity: 0.14;
+    z-index: -2;
+
+    @include respond-above(ssm) {
+      font-size: 110px;
+    }
+    @include respond-above(sm) {
+      font-size: 130px;
+    }
+    @include respond-above(md) {
+      font-size: 180px;
+    }
+    @include respond-above(lg) {
+      font-size: 230px;
+    }
+    @include respond-above(xl) {
+      font-size: 260px;
+    }
+    @include respond-above(xlg) {
+      font-size: 280px;
+    }
+  }
+
+  @include respond-below(lg) {
+    padding-block: 80px;
+  }
+  @include respond-below(md) {
+    padding-block: 50px;
+  }
+}
+
+/* =========================
+   Feature Emergency Variant
+   ========================= */
+
+.vs-feature-style1.vs-feature-emergency {
+  // malo manje “prazno” da deluje kao na sajtu
+  padding-block: 90px;
+
+  // ne koristimo container ribbon iz base-a, već ribbon vezujemo za bar
+  .container {
+    &::before,
+    &::after {
+      content: unset !important;
+    }
+  }
+
+  .vs-feature-emergency__bar {
+    position: relative;
+    z-index: 2;
+    padding: 18px 0; // da sve lepo “sedne” u ribbon
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -45px;
+      transform: skewX(-25deg) translateY(-50%);
+      width: 720px;     // šire jer levo ima i opis
+      height: 115px;    // viši jer je tekst 2 reda
+      z-index: -1;
+
+      @include respond-below(xlg) {
+        width: 640px;
+        height: 105px;
+      }
+
+      @include respond-below(lg) {
+        width: 520px;
+        height: 100px;
+      }
+
+      @include respond-below(sm) {
+        content: unset;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      transform: skewX(-25deg) translateX(-100%) translateY(-50%);
+      width: 10000px;
+      height: 115px;
+      z-index: -1;
+
+      @include respond-below(xlg) { height: 105px; }
+      @include respond-below(lg)  { height: 100px; }
+      @include respond-below(sm)  { content: unset; }
+    }
+
+    // mobile fallback (kad skinemo skew ribbon)
+    @include respond-below(sm) {
+      background-color: var(--second-theme-color);
+      border-radius: 16px;
+      padding: 18px 14px;
+    }
+  }
+
+  .feature-expert {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-size: 30px;
+
+    @include respond-below(lg) { font-size: 26px; }
+    @include respond-below(sm) { font-size: 22px; }
+  }
+
+  .vs-feature-emergency__note {
+    font-size: 14px;
+    line-height: 1.55;
+    opacity: 0.95;
+
+    strong {
+      font-weight: 800;
+    }
+  }
+
+  .vs-feature-emergency__noteSmall {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 13px;
+    opacity: 0.92;
+
+    @include respond-below(sm) {
+      display: block;
+      margin-left: 0;
+      margin-top: 6px;
+    }
+  }
+
+  .vs-feature-emergency__label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    opacity: 0.95;
+    margin-bottom: 10px;
+
+    @include respond-below(sm) {
+      margin-top: 6px;
+    }
+  }
+
+  .vs-feature-emergency__right {
+    gap: 10px;
+  }
+
+  // dugmad kao na sajtu, ali sa kontrastom (da ne izgleda “odvratno”)
+  .vs-feature-emergency__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-width: 270px;
+    padding: 12px 18px;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: var(--white-color, #fff);
+
+    i {
+      font-size: 14px;
+      opacity: 0.95;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.22);
+      border-color: rgba(255, 255, 255, 0.55);
+      color: var(--white-color, #fff);
+    }
+
+    @include respond-below(sm) {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  // watermark ostaje u stilu sajta, samo tekst “Emergency”
+  h2 {
+    opacity: 0.14;
+  }
+
+  @include respond-below(lg) {
+    padding-block: 80px;
+  }
+  @include respond-below(md) {
+    padding-block: 55px;
+  }
+}
+
+.vs-feature-style1.vs-feature-emergency {
+
+  /* 1) SUŽAVANJE sadržaja na desktopu da ne bude “razvučeno” */
+  .vs-feature-emergency__bar {
+    @include respond-above(lg) {
+      max-width: 1100px;      // po potrebi 1040–1180
+      margin-inline: auto;    // centriraj sadržaj unutar sekcije
+    }
+
+    /* 3) SKINI teget pozadinu / karticu na telefonu */
+    @include respond-below(sm) {
+      background-color: transparent !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+    }
+  }
+
+  /* 2) “Europ Assistance” da počinje TAČNO gde i dugmad (desktop) */
+  .vs-feature-emergency__label {
+    width: 270px;          // mora da prati min-width dugmeta
+    text-align: center;      // start od leve ivice dugmeta
+
+    @include respond-below(sm) {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+
+  /* ako ti je i dalje desni blok “previše desno”, ovo ga dodatno privlači ka unutra */
+  .vs-feature-emergency__right {
+    @include respond-above(lg) {
+      padding-right: 10px;
+    }
+  }
+}
+

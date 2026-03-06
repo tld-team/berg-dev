@@ -1,0 +1,13 @@
+{
+  "name": "BERG Emergency",
+  "short_name": "BERG SOS",
+  "start_url": "/emergency/profile.php?source=a2hs",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fdf8f5",
+  "theme_color": "#75754f",
+  "icons": [
+    { "src": "/assets/img/pwa/berg-emergency-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/pwa/berg-emergency-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

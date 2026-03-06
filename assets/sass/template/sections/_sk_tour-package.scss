@@ -1,0 +1,689 @@
+.vs-tour-package {
+  background-color: (
+    #f0f1e9
+  );
+
+  &.style-2 {
+    background: linear-gradient(
+      180deg,
+      rgba(var(--white-color-rgb), 0.07) 0%,
+      rgba(247, 146, 30, 0.07) 100%
+    );
+  }
+  &.style-3 {
+    position: relative;
+    overflow: hidden;
+
+    .tour-package-icon-1,
+    .tour-package-icon-2 {
+      position: absolute;
+      @include respond-below(md) {
+        display: none;
+      }
+    }
+    .tour-package-icon-1 {
+      top: -5px;
+      left: 50px;
+
+      @include respond-below(xl) {
+        left: 20px;
+        top: -350px;
+      }
+      @include respond-below(lg) {
+        left: 30px;
+        top: -350px;
+      }
+    }
+    .tour-package-icon-2 {
+      right: 35px;
+      bottom: 50px;
+
+      @include respond-below(lg) {
+        bottom: 30px;
+      }
+    }
+  }
+}
+
+.tour-package-box {
+  border-radius: 10px;
+  border: 1px solid rgba(var(--black-color-rgb), 0.1);
+  overflow: clip;
+
+  .tour-package-thumb {
+    overflow: clip;
+    img {
+      transition: all 0.3s;
+    }
+  }
+  .tour-package-meta {
+    border-bottom: 1px solid rgba(var(--black-color-rgb), 0.15);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      li {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        position: relative;
+        align-items: center;
+
+        @include respond-below(md) {
+          font-size: 12px;
+        }
+        @include respond-below(sm) {
+          font-size: 14px;
+        }
+        @include respond-below(ssm) {
+          font-size: 13px;
+        }
+        @include respond-below(x) {
+          font-size: 10px;
+        }
+
+        span {
+          display: inline-block;
+          font-weight: 500;
+          line-height: 157.143%;
+          letter-spacing: 0.42px;
+          text-transform: capitalize;
+        }
+
+        &:not(:first-child) {
+          &::before {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            top: 50%;
+            left: -6px;
+            transform: translateY(-50%);
+            background-color: rgba(var(--title-color-rgb), 0.15);
+          }
+        }
+      }
+    }
+  }
+  .tour-package-content {
+    padding: 32px;
+
+    @include respond-below(md) {
+      padding: 25px;
+    }
+
+    .title {
+      text-transform: capitalize;
+      margin-top: 6px;
+      font-size: 30px;
+      a {
+        position: relative;
+        background-image: linear-gradient(
+          to right,
+          currentColor 0%,
+          currentColor 100%
+        );
+        background-size: 0px 1px;
+        background-position: 0px 95%;
+        transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+          0s;
+        padding: 0.1% 0px;
+        background-repeat: no-repeat;
+        color: inherit;
+
+        &:hover {
+          background-size: 100% 1px;
+        }
+      }
+    }
+    .pricing-container {
+      margin: 32px 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @include respond-below(mlg) {
+        flex-direction: column;
+        align-items: start;
+      }
+      @include respond-below(lg) {
+        flex-direction: row;
+        // align-items: start;
+      }
+      @include respond-below(md) {
+        align-items: start;
+        flex-direction: column;
+      }
+      @include respond-below(sm) {
+        flex-direction: row;
+      }
+      @include respond-below(ssm) {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .package-info {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 18px;
+        margin-right: auto;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-weight: 500;
+          line-height: 157.143%;
+          letter-spacing: 0.42px;
+          text-transform: capitalize;
+          color: black;
+
+          i {
+            font-size: 18px;
+            -webkit-text-stroke: 0.5px;
+          }
+        }
+      }
+      .price-info {
+        padding-left: 12px;
+        border-left: 1px solid rgba(var(--black-color-rgb), 0.2);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @include respond-below(mlg) {
+          flex-direction: row;
+        }
+        @include respond-below(lg) {
+          flex-direction: column;
+        }
+        @include respond-below(md) {
+          flex-direction: row;
+        }
+        @include respond-below(sm) {
+          flex-direction: column;
+        }
+        @include respond-below(ssm) {
+          flex-direction: row;
+        }
+
+        .price-off {
+          display: inline-block;
+          border-radius: 50px;
+          background: $theme-color;
+          padding: 8px 13px;
+          text-shadow: 0px 4px 4px rgba(var(--black-color-rgb), 0.1);
+          font-size: 12px;
+          font-weight: 800;
+          line-height: 1;
+          letter-spacing: 0.36px;
+          text-transform: capitalize;
+          width: max-content;
+          height: max-content;
+        }
+        .price {
+          display: inline-flex;
+          align-items: baseline;
+          gap: 5px;
+          color: var(--body-color);
+
+          h6 {
+            color: var(--body-color);
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+    .location {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      line-height: 157.143%;
+      letter-spacing: 0.42px;
+      i {
+        font-size: 18px;
+      }
+      span {
+        display: inline-block;
+      }
+    }
+  }
+  .tour-package-footer {
+    border-top: 1px solid rgba(var(--black-color-rgb), 0.15);
+    padding-top: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pricing-info {
+      display: flex;
+      align-items: center;
+      gap: 8.5px;
+      font-size: 16px;
+      line-height: 137.5%;
+      letter-spacing: 0.48px;
+      text-transform: capitalize;
+
+      .new-price {
+        color: var(--bg-color-4);
+        font-family: $body-font;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 91.667%;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+      }
+    }
+    .buy-package {
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      background-color: $second-theme-color;
+      border-radius: 50%;
+      display: grid;
+      place-content: center;
+      font-size: 18px;
+    }
+  }
+
+  &:hover {
+    .tour-package-thumb {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .tour-package-content {
+      padding: 32px;
+      .location {
+        i {
+          color: $theme-color;
+          transition: 0.1s;
+        }
+      }
+    }
+  }
+  &.style-2 {
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(var(--black-color-rgb), 0.1);
+
+    &:hover {
+      .buy-package {
+        background-color: $theme-color;
+
+        i {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  &.style-3 {
+    border-radius: 19px;
+    border: 1.5px solid var(--bg-color-10);
+    background: var(--white-color);
+    padding: 15px;
+
+    .tour-package-thumb {
+      border-radius: 13px;
+    }
+    .tour-package-content {
+      padding: 15px 0;
+    }
+    .tour-package-footer {
+      border-top: none;
+
+      .tour-duration {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        letter-spacing: 0.42px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* =========================================================
+   FIX v2 (proporcionalno, bez razvlačenja):
+   Sve Membership Programs kartice iste visine,
+   ali spacing ostaje prirodan kao na “dobroj” kartici.
+   ========================================================= */
+
+.tour-package-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-package-box .tour-package-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  /* PROPORCIONALNA visina content dela (prilagodi po potrebi) */
+  min-height: clamp(260px, 22vh, 340px);
+
+  /* lepši, kontrolisan razmak umesto margin-a iz template-a */
+  gap: 16px;
+}
+
+/* Ujednači naslov (da svi startuju isto) */
+.tour-package-box .tour-package-content .title {
+  min-height: 56px; /* 1–2 reda */
+  margin: 0;
+}
+
+/* Resetuj prethodno "zakucavanje" koje pravi prazninu */
+.tour-package-box .tour-package-content .pricing-container {
+  min-height: 0 !important;      /* BITNO: skida razvlačenje */
+  margin: 0 !important;          /* skida veliki margin 32px 0 iz template-a */
+}
+
+/* Ako želiš mali razmak pre pricing-a, radi ga preko gap-a (gore) */
+
+/* Dugme uvek dole, ali bez forsiranja praznine u sredini */
+.tour-package-box .tour-package-content .btn-trigger {
+  margin-top: auto;
+}
+
+.tour-package-box .tour-package-content .vs-btn {
+  margin-top: 0 !important;
+}
+
+/* Swiper: da kartice rastu jednako */
+.swiper-wrapper { align-items: stretch; }
+.swiper-slide { height: auto; }
+
+/* ===== Insurance guide card (TAB 1 / #rescue) ===== */
+.insurance-guide-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+}
+
+.insurance-guide-head{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.insurance-guide-icon{
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  background: #75754f; /* zeleno kao referenca */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 88px;
+}
+
+.insurance-guide-icon img{
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  display: block;
+}
+
+.insurance-guide-main{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.insurance-guide-title{
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.insurance-guide-meta{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.insurance-guide-amount{
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.insurance-guide-more{
+  border: 0;
+  background: transparent;
+  color: #1a73e8;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+}
+
+.insurance-guide-more-ico{
+  font-size: 18px;
+  line-height: 1;
+}
+
+.insurance-guide-collapse{
+  margin-top: 14px;
+}
+
+.insurance-guide-body{
+  border-top: 1px solid rgba(0,0,0,.10);
+  padding-top: 14px;
+  line-height: 1.7;
+}
+
+.insurance-guide-body p{
+  margin: 0 0 14px 0;
+}
+
+.insurance-guide-link{
+  color: #75754f;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* open state (opciono: mala vizuelna promena) */
+.insurance-guide-card.is-open{
+  border-color: rgba(0,0,0,.14);
+}
+
+/* responsive */
+@media (max-width: 576px){
+  .insurance-guide-head{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .insurance-guide-meta{
+    justify-content: flex-start;
+  }
+}
+
+/* === Equal height cards in grid (closed state) === */
+.insurance-guide-grid > [class*="col-"]{
+  display: flex;
+}
+
+.insurance-guide-card{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* head (ikonica + naslov) neka raste, meta ostaje dole */
+.insurance-guide-head{
+  flex: 1 1 auto;
+  align-items: flex-start;
+}
+
+/* meta red: uvek na dnu kartice */
+.insurance-guide-meta{
+  margin-top: auto;            /* gura meta na dno */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+}
+
+/* da dugme ne "širi" karticu i da ostane konzistentno */
+.insurance-guide-meta .vs-btn.style9{
+  white-space: nowrap;
+}
+
+/* (opciono) stabilniji layout naslova */
+.insurance-guide-title{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* max 2 reda */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* === FIX: kad se jedna kartica otvori, druga NE SME da se rasteže === */
+.insurance-guide-grid{
+  align-items: flex-start; /* stop stretch po visini u redu */
+}
+
+/* undo equal-height stretch koji pravi prazninu */
+.insurance-guide-grid > [class*="col-"]{
+  display: block !important;
+}
+
+.insurance-guide-card{
+  height: auto !important;      /* više ne puni visinu kolone */
+  min-height: 150px;            /* zatvorene kartice i dalje iste visine (podesi po potrebi) */
+  display: flex;
+  flex-direction: column;
+}
+
+/* da amount + dugme uvek budu dole, bez razvlačenja */
+.insurance-guide-main{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.insurance-guide-meta{
+  margin-top: 15px;
+}
+
+/* stabilizuj naslov (da ne pravi različite visine) */
+.insurance-guide-title{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* pixel-perfect: button uvek dole desno */
+.insurance-guide-card{
+  position: relative;
+  padding-bottom: 22px; /* prostora dole */
+}
+
+.insurance-guide-meta{
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  margin-top: 0 !important;
+}
+
+.insurance-guide-main{
+  padding-right: 170px; /* rezerviši prostor za dugme + amount */
+}
+
+/* === Absolute meta samo dok je kartica zatvorena === */
+.insurance-guide-card .insurance-guide-meta{
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  margin-top: 0 !important;
+}
+
+/* da sadržaj ne ulazi ispod meta dok je zatvoreno */
+.insurance-guide-card{
+  position: relative;
+  padding-bottom: 78px; /* dovoljno za amount+button */
+}
+.insurance-guide-main{
+  padding-right: 0; /* ne mora na svim ekranima */
+}
+
+/* === Kad je kartica otvorena: vrati meta u flow ispod sadržaja === */
+.insurance-guide-card.is-open{
+  padding-bottom: 18px; /* vrati normalu */
+}
+
+.insurance-guide-card.is-open .insurance-guide-meta{
+  position: static;          /* više nije absolute */
+  margin-top: 14px !important;
+  justify-content: flex-end;
+}
+
+
+/* === Mobile layout: title desno od ikonice (dok je meta absolute dole desno) === */
+@media (max-width: 576px){
+
+  /* head: ikonica levo, tekst desno */
+  .insurance-guide-head{
+    display: grid !important;
+    grid-template-columns: 88px 1fr;
+    column-gap: 12px;
+    align-items: start;
+  }
+
+  .insurance-guide-icon{
+    width: 72px;
+    height: 72px;
+    flex: none;
+  }
+
+  .insurance-guide-icon img{
+    width: 44px;
+    height: 44px;
+  }
+
+  /* skini desktop rezervaciju prostora za meta (na telefonu nije potrebna) */
+  .insurance-guide-main{
+    padding-right: 0 !important;
+  }
+
+  /* ostavi dovoljno donjeg prostora da meta (absolute) ne preklopi tekst */
+  .insurance-guide-card{
+    padding-bottom: 78px; /* po potrebi 70-90px */
+  }
+
+  /* meta i dalje dole desno, ali malo manja */
+  .insurance-guide-meta{
+    right: 14px;
+    bottom: 14px;
+  }
+
+  /* naslov: dozvoli 2-3 reda na telefonu */
+  .insurance-guide-title{
+    -webkit-line-clamp: 3;
+  }
+}
+

@@ -1,0 +1,4579 @@
+/*
+Template Name: Vecuro
+Template URL: https://tripix.com/
+Description: Tripix - Tours & Travels HTML5 Template
+Author: Vecuro
+Developer: Md Kaium Hossain
+Author URL: https://themeforest.net/user/vecuro_themes
+Version: 1.0.0
+*/
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.6. Wordpress Default
+
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.5. Font
+    3.6. Background
+    3.7. Text Color
+    3.8. Overlay
+    3.9. Animation
+    3.10. Icon
+    3.10. Search
+
+04. Template Style
+    4.1. widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcrumb
+    4.5. Blog
+    4.6. Hero Area
+    4.7. Feature
+    4.8 Destination Gallery
+    4.9 Destination
+    4.10 Destination Details
+    4.11 Blog-single
+    4.12 Choose Us
+    4.13 partner
+    4.14 Top Place
+    4.15 Awards
+    4.16 Tour Package
+    4.17 Services
+    4.18 Travel Guides
+    4.19 Insta
+    4.20 Testimonial
+    4.21 Error
+    4.22 Accordion
+    4.23 About
+    4.24 Offer
+    4.25 Exclusive Gallery
+    4.26 CTA
+    4.27 Counter
+    4.28 Contact
+    4.29 Activities
+    4.30 Popup Search
+
+05. Spacing
+*/
+/*=================================
+    CSS Index End
+==================================*/
+
+/*=================================
+   01. Theme Base
+==================================*/
+/*------------------- 1.1. Mixin -------------------*/
+@import "base/mixin";
+
+/*------------------- 1.2. Function -------------------*/
+@import "base/function";
+
+/*------------------- 1.3. Variable-------------------*/
+@import "base/variable";
+
+/*------------------- 1.5. Reset -------------------*/
+@import "base/reset";
+
+/*------------------- 1.6. Responsive -------------------*/
+@import "base/responsive";
+
+/*------------------- 1.7. Wordpress Default -------------------*/
+@import "base/wpdefault";
+
+/*=================================
+    02. Reset
+==================================*/
+/*------------------- 2.1. Container -------------------*/
+@import "reset/container";
+
+/*------------------- 2.2. Grid -------------------*/
+@import "reset/grid";
+
+/*------------------- 2.3. Input -------------------*/
+@import "reset/input";
+
+/*------------------- 2.4. Slick Slider -------------------*/
+@import "reset/swiper-slider";
+
+/*------------------- 2.5. Mobile Menu -------------------*/
+@import "reset/vsmenu";
+
+/*=================================
+    03. Utilities
+==================================*/
+/*------------------- 3.1. Preloader -------------------*/
+@import "utilities/preloader";
+
+/*------------------- 3.2. Buttons -------------------*/
+@import "utilities/btns";
+
+/*------------------- 3.3. Titles -------------------*/
+@import "utilities/titles";
+
+/*------------------- 3.4. Common -------------------*/
+@import "utilities/common";
+
+/*------------------- 3.5. Font -------------------*/
+@import "utilities/font";
+
+/*------------------- 3.6. Background -------------------*/
+@import "utilities/background";
+
+/*------------------- 3.7. Text Color -------------------*/
+@import "utilities/text-color";
+
+/*------------------- 3.8. Overlay -------------------*/
+@import "utilities/overlay";
+
+/*------------------- 3.9. Animation -------------------*/
+@import "utilities/animation";
+
+/*------------------- 3.10. Icon -------------------*/
+@import "utilities/icon";
+
+/*------------------- 3.11. Search -------------------*/
+@import "utilities/sk_search";
+
+/*=================================
+    04. Template Style
+==================================*/
+
+/*------------------- 4.1. widget  -------------------*/
+@import "template/sections/sk_widget-sidebar";
+
+/*------------------- 4.2. Header  -------------------*/
+@import "template/headers/header";
+
+/*------------------- 4.3. Footer  -------------------*/
+@import "template/footers/sk_footer";
+
+/*------------------- 4.4. Breadcrumb  -------------------*/
+@import "template/sections/sk_breadcrumb";
+
+/*------------------- 4.5. Blog  -------------------*/
+@import "template/sections/sk_blog";
+
+/*------------------- 4.6. Hero Area  -------------------*/
+@import "template/sections/sk_hero";
+
+/*------------------- 4.7. Feature  -------------------*/
+@import "template/sections/sk_feature";
+
+/*------------------- 4.8 Destination Gallery  -------------------*/
+@import "template/sections/sk_destination-gallery";
+
+/*------------------- 4.9 Destination  -------------------*/
+@import "template/sections/sk_destination";
+
+/*------------------- 4.10 Destination Details  -------------------*/
+@import "template/sections/sk_destination-details";
+
+/*------------------- 4.11 Blog-single  -------------------*/
+@import "template/sections/sk_blog-single";
+
+/*------------------- 4.12 Choose Us  -------------------*/
+@import "template/sections/sk_choose-us";
+
+/*------------------- 4.13 partner  -------------------*/
+@import "template/sections/sk_partner";
+
+/*------------------- 4.14 Top Place  -------------------*/
+@import "template/sections/sk_top-place";
+
+/*------------------- 4.15 Awards  -------------------*/
+@import "template/sections/sk_awards";
+
+/*------------------- 4.16 Tour Package  -------------------*/
+@import "template/sections/sk_tour-package";
+
+/*------------------- 4.17 Services  -------------------*/
+@import "template/sections/sk_services";
+
+/*------------------- 4.18 Travel Guides  -------------------*/
+@import "template/sections/sk_travel-guides";
+
+/*------------------- 4.19 Insta  -------------------*/
+@import "template/sections/sk_insta";
+
+/*------------------- 4.20 Testimonial  -------------------*/
+@import "template/sections/sk_testimonial";
+
+/*------------------- 4.21 Error  -------------------*/
+@import "template/sections/sk_error";
+
+/*------------------- 4.22 Accordion  -------------------*/
+@import "template/sections/sk_accordion";
+
+/*------------------- 4.23 About  -------------------*/
+@import "template/sections/sk_about";
+
+/*------------------- 4.24 Offer  -------------------*/
+@import "template/sections/sk_offer";
+
+/*------------------- 4.25 Exclusive Gallery  -------------------*/
+@import "template/sections/sk_exclusive-gallery";
+
+/*------------------- 4.26 CTA  -------------------*/
+@import "template/sections/sk_cta";
+
+/*------------------- 4.27 Counter  -------------------*/
+@import "template/sections/sk_counter";
+
+/*------------------- 4.28 Contact  -------------------*/
+@import "template/sections/sk_contact";
+
+/*------------------- 4.29 Activities  -------------------*/
+@import "template/sections/sk_activities";
+
+/*------------------- 4.30 Popup Search  -------------------*/
+@import "template/sections/popupsearch-v1";
+/*=================================
+    05. Spacing
+==================================*/
+@import "spacing/spacing";
+
+/*=================================
+    06. Fonts
+==================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+
+:root {
+  --theme-color: #75754f;
+  --theme-color-rgb: 247, 146, 31;
+  --second-theme-color: #223740;
+  --second-theme-color-rgb: 34, 55, 64;
+  --third-theme-color: #465b2d;
+  --third-theme-color-rgb: 70, 91, 45;
+  --title-color: #141414;
+  --title-color-rgb: 20, 20, 20;
+  --body-color: #535b5f;
+  --body-color-rgb: 83, 91, 95;
+  --black-color: #000000;
+  --black-color-rgb: 0, 0, 0;
+  --white-color: #ffffff;
+  --white-color-rgb: 255, 255, 255;
+  --yellow-color: #fec624;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --bg-color-1: #75754f;
+  --bg-color-1-rgb: 247, 146, 31;
+  --bg-color-2: #223740;
+  --bg-color-2-rgb: 34, 55, 64;
+  --bg-color-3: #465b2d;
+  --bg-color-3-rgb: 70, 91, 45;
+  --bg-color-4: #141414;
+  --bg-color-4-rgb: 20, 20, 20;
+  --bg-color-5: #d3d2d2;
+  --bg-color-5-rgb: 211, 210, 210;
+  --bg-color-6: #cfcfcf;
+  --bg-color-6-rgb: 207, 207, 207;
+  --bg-color-7: #d9d9d9;
+  --bg-color-7-rgb: 217, 217, 217;
+  --bg-color-8: #fefefe;
+  --bg-color-8-rgb: 254, 254, 254;
+  --bg-color-9: #915612;
+  --bg-color-9-rgb: 145, 86, 18;
+  --bg-color-10: #dadada;
+  --bg-color-10-rgb: 218, 218, 218;
+  --bg-color-11: #f1eadb;
+  --bg-color-11-rgb: 241, 234, 219;
+  --bg-color-12: #43a32d;
+  --bg-color-12-rgb: 67, 163, 45;
+  --bg-color-13: #d80808;
+  --bg-color-13-rgb: 217, 8, 8;
+  --vs-border-color: #e0e0e0;
+  --title-font: "Abril Fatface", serif;
+  --body-font: "Rubik", serif;
+  --bricolage-font: "Bricolage Grotesque", serif;
+  --poppins-font: "Poppins", serif;
+  --icon-font: "Font Awesome 6 Pro";
+  --main-container: 1300px;
+  --container-gutters: 30px;
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+  --section-title-space: 80px;
+  --ripple-ani-duration: 5s;
+}
+
+/* ADDITIONAL CSS */
+
+/* AWARDS SLIDER NAV */
+.berg-awards-slider-wrap {
+  position: relative;
+}
+
+.berg-awards-slider .swiper-slide {
+  height: auto;
+}
+
+.berg-awards-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #75754f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.berg-awards-nav:hover {
+  background: black;
+}
+
+.berg-awards-nav svg {
+  width: 26px;
+  height: 26px;
+}
+
+.berg-awards-prev {
+  left: -72px;
+  /* desktop – kao na slici */
+}
+
+.berg-awards-next {
+  right: -72px;
+  /* desktop – kao na slici */
+}
+
+/* da strelice ne "pobegnu" van ekrana na manjim širinama */
+@media (max-width: 1399px) {
+  .berg-awards-prev {
+    left: -40px;
+  }
+
+  .berg-awards-next {
+    right: -40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .berg-awards-nav {
+    width: 44px;
+    height: 44px;
+  }
+
+  .berg-awards-prev {
+    left: 10px;
+  }
+
+  .berg-awards-next {
+    right: 10px;
+  }
+}
+
+/* Side arrows for Membership Programs slider */
+.tour-package-slider-wrap {
+  position: relative;
+  overflow: visible;
+}
+
+.tour-packages-side-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #75754f;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.tour-packages-side-nav:hover {
+  background: black;
+}
+
+.tour-packages-side-nav svg {
+  width: 26px;
+  height: 26px;
+}
+
+.tour-packages-prev {
+  left: -72px;
+}
+
+.tour-packages-next {
+  right: -72px;
+}
+
+/* da se ne seku na manjim ekranima */
+@media (max-width: 1399px) {
+  .tour-packages-prev {
+    left: -40px;
+  }
+
+  .tour-packages-next {
+    right: -40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tour-packages-side-nav {
+    width: 44px;
+    height: 44px;
+    top: 30%;
+    /* pomeri gore u zonu slike (manje smeta naslovu) */
+    transform: translateY(-50%);
+  }
+
+  /* izbaci van kartice da ne seče tekst */
+  .tour-packages-prev {
+    left: -12px;
+  }
+
+  .tour-packages-next {
+    right: -12px;
+  }
+}
+
+
+/* CTA buttons row */
+.berg-plans-cta-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.berg-btn-outline {
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important;
+  color: #222 !important;
+}
+
+
+/* MOBILE ONLY */
+
+/* MOBILE ONLY */
+@media (max-width: 767px) {
+
+  /* 1) SKLONI TOP BAR NA TELEFONU */
+  .header-top,
+  .header-top-area,
+  .vs-header-top,
+  .top-bar,
+  .topbar,
+  .header-top-wrapper {
+    display: none !important;
+  }
+
+  /* 2) SPUSTI HERO CONTENT */
+  .hero-layout1 .hero-content,
+  .hero-layout1 .hero-content.text-center,
+  .hero-layout1 .hero-content-wrap,
+  .hero-layout1 .hero-content-area {
+    margin-top: 150px !important;
+  }
+
+  /* 3) DUGMAD: manji razmak + ista širina */
+  .hero-layout1 .btn-trigger,
+  .hero-layout1 .hero-btns,
+  .hero-layout1 .hero-actions,
+  .hero-layout1 .vs-btn-group {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    /* manji razmak */
+  }
+
+  /* cilja i <a class="vs-btn ..."> i <button class="vs-btn ..."> */
+  .hero-layout1 .btn-trigger .vs-btn,
+  .hero-layout1 .hero-btns .vs-btn,
+  .hero-layout1 .hero-actions .vs-btn,
+  .hero-layout1 .vs-btn-group .vs-btn {
+    width: min(320px, 100%) !important;
+    /* ista širina, ali normalna */
+    max-width: 320px !important;
+    min-width: 260px;
+    /* može 240/260 po ukusu */
+    justify-content: center !important;
+    text-align: center !important;
+
+    /* SMANJI DUGME */
+    padding: 12px 18px !important;
+    min-height: 44px !important;
+    /* “tap-friendly” */
+    border-radius: 12px !important;
+  }
+
+  /* SMANJI TEKST u dugmadi */
+  .hero-layout1 .btn-trigger .vs-btn,
+  .hero-layout1 .hero-btns .vs-btn,
+  .hero-layout1 .hero-actions .vs-btn,
+  .hero-layout1 .vs-btn-group .vs-btn {
+    font-size: 14px !important;
+    line-height: 1.1 !important;
+    letter-spacing: 0.2px !important;
+    white-space: nowrap;
+    /* da ne prelomi u 2 reda */
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* 1) SKLONI TOP BAR NA TELEFONU */
+  .header-top,
+  .header-top-area,
+  .vs-header-top,
+  .top-bar,
+  .topbar,
+  .header-top-wrapper {
+    display: none !important;
+  }
+
+  /* 2) SPUSTI HERO CONTENT (BERG MEMBERSHIP...) ZA +100px */
+  /* 2) HERO CONTENT — pozicioniraj oko 32% od vrha (responsivno) */
+  .hero-layout1 .hero-content,
+  .hero-layout1 .hero-content.text-center,
+  .hero-layout1 .hero-content-wrap,
+  .hero-layout1 .hero-content-area {
+    margin-top: clamp(120px, 22vh, 100px) !important;
+  }
+
+  /* 3) DUGMAD: razmak + ista širina + jedan ispod drugog */
+  .hero-layout1 .btn-trigger,
+  .hero-layout1 .hero-btns,
+  .hero-layout1 .hero-actions,
+  .hero-layout1 .vs-btn-group {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+    /* razmak između dugmadi */
+  }
+
+  .hero-layout1 .btn-trigger .vs-btn,
+  .hero-layout1 .hero-btns .vs-btn,
+  .hero-layout1 .hero-actions .vs-btn,
+  .hero-layout1 .vs-btn-group .vs-btn {
+    width: 100% !important;
+    max-width: 120px;
+    /* po želji: 280-360px */
+    justify-content: center !important;
+  }
+
+  .vs-btn.style4 {
+    font-size: 10px;
+    width: 150px;
+  }
+
+  .style4-secundary {
+    font-size: 10px !important;
+    width: 150px !important;
+  }
+
+}
+
+/* ============================
+   BENEFITS TABS: title-only + smooth reveal
+   ============================ */
+#benefits-tabs .benefit-tile {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Početno stanje: samo naslov */
+#benefits-tabs .benefit-tile .info {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(10px);
+  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease;
+}
+
+/* Naslov se pomera smooth */
+#benefits-tabs .benefit-tile .title {
+  transition: transform 0.35s ease;
+}
+
+/* Kada je aktivno: naslov ide gore + opis se otvara */
+#benefits-tabs .benefit-tile.is-active .title,
+#benefits-tabs .benefit-tile:hover .title,
+#benefits-tabs .benefit-tile:focus-visible .title,
+#benefits-tabs .benefit-tile:focus-within .title {
+  transform: translateY(-10px);
+}
+
+#benefits-tabs .benefit-tile.is-active .info,
+#benefits-tabs .benefit-tile:hover .info,
+#benefits-tabs .benefit-tile:focus-visible .info,
+#benefits-tabs .benefit-tile:focus-within .info {
+  max-height: 120px;
+  /* po potrebi 140/160 */
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 10px;
+}
+
+/* Bonus: malo “focus” stila da izgleda profi */
+#benefits-tabs .benefit-tile:focus-visible {
+  outline: 2px solid rgba(117, 117, 79, 0.65);
+  outline-offset: 4px;
+  border-radius: 18px;
+}
+
+/* Telefon: da se opis ne guši + lakši tap */
+@media (max-width: 767px) {
+  #benefits-tabs .benefit-tile.is-active .info {
+    max-height: 160px;
+  }
+}
+
+/* =========================================================
+   BENEFIT CARDS: CTA dugme uvek na dnu + centrirano (CSS ONLY)
+   Radi i ako je dugme duboko u HTML-u (nije direct child).
+   ========================================================= */
+
+/* kartica kao referentni okvir */
+article.benefit-card[data-benefit-card] {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+
+  /* rezerviši prostor dole za dugme (da tekst ne upada u dugme) */
+  padding-bottom: 90px;
+  /* po potrebi 80–110px */
+}
+
+/* dugme "zakucaj" na dno i centriraj */
+article.benefit-card[data-benefit-card] .vs-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  /* razmak od dna */
+  transform: translateX(-50%);
+  margin: 0 !important;
+
+  /* lep izgled + konzistentna širina */
+  width: min(280px, calc(100% - 48px));
+  /* 24px margina levo/desno */
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+/* ako theme dodaje wrappere oko dugmeta pa pravi dodatni razmak */
+article.benefit-card[data-benefit-card] .btn-trigger,
+article.benefit-card[data-benefit-card] .btn-wrap,
+article.benefit-card[data-benefit-card] .vs-btn-wrap {
+  margin-top: 0 !important;
+}
+
+
+/* MEMBERSHIP PACKAGES */
+
+/* =========================================================
+   BERG Order (cards + 3-step flow) — no prices
+   ========================================================= */
+
+.berg-order-plans {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+
+  @include respond-below(lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* kartice jednake visine + dugme uvek dole */
+.berg-plan-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.berg-plan-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.berg-plan-meta {
+  margin: 10px 0 15px;
+}
+
+.berg-plan-select {
+  margin: 5px 0 18px;
+}
+
+.berg-plan-footer {
+  margin-top: auto;
+  opacity: .9;
+}
+
+.berg-plan-actions {
+  margin-top: 16px;
+}
+
+/* Order (stepper) */
+.berg-order {
+  border-radius: 16px;
+}
+
+.berg-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.berg-step {
+  background: rgba(255, 255, 255, .75);
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: .65;
+}
+
+.berg-step.is-active {
+  opacity: 1;
+  border-color: rgba(0, 0, 0, .18);
+}
+
+.berg-step-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #75754f;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.berg-step-label {
+  font-weight: 800;
+}
+
+.berg-panel-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.berg-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.berg-summary {
+  background: rgba(117, 117, 79, .08);
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.berg-subblock {
+  border-top: 1px solid rgba(0, 0, 0, .10);
+  padding-top: 18px;
+}
+
+.berg-child-card {
+  background: rgba(117, 117, 79, .06);
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 14px;
+  padding: 14px;
+  margin-top: 12px;
+}
+
+.berg-child-remove {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  background: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.berg-success {
+  background: rgba(0, 0, 0, .06);
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* =========================================================
+   BERG Order – UI polish (center placeholder + dropdown icon + actions alignment)
+   ========================================================= */
+
+/* 1) Center tekst/placeholder u inputima i selectovima */
+.berg-order input,
+.berg-order select,
+.berg-plan-select input,
+.berg-plan-select select {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Placeholder centriran */
+.berg-order input::placeholder,
+.berg-plan-select input::placeholder {
+  text-align: center;
+  opacity: 0.75;
+}
+
+/* Select: centriranje prikazanog teksta (Chrome/Safari/Edge) */
+.berg-order select,
+.berg-plan-select select {
+  text-align-last: center;
+  /* bitno za select */
+}
+
+/* 1b) Dodaj "kvačicu" (chevron) desno za dropdown – bez diranja kruga */
+.berg-order select,
+.berg-plan-select select {
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* napravi mesta desno za ikonicu */
+  padding-right: 48px;
+
+  /* chevron svg kao background */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%2375754f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 18px 18px;
+}
+
+/* IE/old edge fallback */
+.berg-order select::-ms-expand,
+.berg-plan-select select::-ms-expand {
+  display: none;
+}
+
+/* 2) STEP 1: dugmad dole desno (ravno sa donjom linijom)
+   Ovo radi kada u panelu ima i .berg-summary i .berg-actions-row */
+.berg-panel-card:has(.berg-summary):has(.berg-actions-row) {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: end;
+  /* KLJUČ: poravnanje na dno */
+}
+
+.berg-panel-card:has(.berg-summary):has(.berg-actions-row) .berg-actions-row {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 0;
+  /* da ne gura gore */
+}
+
+/* 3) STEP 2 i STEP 3: dugmad centrirana + zalepljena na dno kartice
+   (paneli bez summary bloka) */
+.berg-panel-card:not(:has(.berg-summary)) {
+  display: flex;
+  flex-direction: column;
+}
+
+.berg-panel-card:not(:has(.berg-summary)) .berg-actions-row {
+  margin-top: auto;
+  /* dugmad idu na dno */
+  padding-top: 18px;
+  justify-content: center;
+  /* centriranje */
+  align-items: center;
+}
+
+/* Sitno: kad se wrap-uje, da i dalje izgleda centrirano */
+.berg-actions-row {
+  justify-content: center;
+  /* default centar */
+}
+
+.berg-panel-card:has(.berg-summary):has(.berg-actions-row) .berg-actions-row {
+  justify-content: flex-end;
+  /* ali step1 ostaje desno */
+}
+
+/* =========================================================
+   MOBILE: Stepper – aktivni širok + ostali samo broj
+   + Step 1 naslov gore centriran
+   ========================================================= */
+@media (max-width: 767px) {
+
+  /* STEP PILLS u jednom redu */
+  .berg-steps {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    /* gasi grid sa desktopa */
+    grid-template-columns: none !important;
+  }
+
+  /* DEFAULT (neaktivni): samo krug sa brojem */
+  .berg-step {
+    flex: 0 0 auto;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    opacity: .65;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .berg-step .berg-step-label {
+    display: none !important;
+    /* sakrij natpis na telefonu */
+  }
+
+  /* ostavi samo broj u krugu */
+  .berg-step-num {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* AKTIVNI: raširi do kraja + prikaži label */
+  .berg-step.is-active {
+    flex: 1 1 100%;
+    padding: 12px 14px !important;
+    border: 1px solid rgba(0, 0, 0, .18) !important;
+    background: rgba(255, 255, 255, .85) !important;
+    border-radius: 14px;
+    opacity: 1;
+    justify-content: flex-start;
+    gap: 10px;
+    min-width: 0;
+    /* da ellipsis radi */
+  }
+
+  .berg-step.is-active .berg-step-label {
+    display: block !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 800;
+  }
+
+  /* =========================================================
+   ORDER: skrol da pogodi početak (da se vide koraci)
+   ========================================================= */
+  #berg-order-start {
+    scroll-margin-top: 120px;
+    /* prilagodi ako ti header veći/manji */
+  }
+
+  /* =========================================================
+   STEP 1: summary + dugmad gore, bez naslova, bez gap-a
+   ========================================================= */
+  .berg-panel-card--step1 {
+    padding: 18px !important;
+  }
+
+  /* wrapper: levo info, desno dugmad */
+  .berg-step1-wrap {
+    display: flex;
+    align-items: flex-start;
+    /* BITNO: gore, ne vertikalno centrirano */
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  /* summary: veći font, bez praznih razmaka */
+  .berg-summary--step1 {
+    background: rgba(117, 117, 79, .08);
+    border: 1px solid rgba(0, 0, 0, .10);
+    border-radius: 12px;
+    padding: 14px 16px;
+    flex: 1 1 auto;
+    text-align: left;
+    font-size: 16px;
+    /* malo veće */
+    line-height: 1.35;
+  }
+
+  .berg-summary--step1 p {
+    margin: 0 !important;
+    /* uklanja gap između redova */
+  }
+
+  .berg-summary--step1 p+p {
+    margin-top: 6px !important;
+    /* mali, kontrolisan razmak */
+  }
+
+  /* dugmad: jedno ispod drugog, desno */
+  .berg-actions-row--step1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    flex: 0 0 auto;
+  }
+
+  .berg-actions-row--step1 .vs-btn {
+    min-width: 240px;
+    /* kao na slici (po želji) */
+  }
+
+  /* mobile: stack (dugmad ispod summary) */
+  @media (max-width: 991.98px) {
+    .berg-step1-wrap {
+      flex-direction: column;
+    }
+
+    .berg-actions-row--step1 {
+      width: 100%;
+      align-items: stretch;
+    }
+
+    .berg-actions-row--step1 .vs-btn {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+
+  /* =========================================================
+     STEP 1: Naslov gore, na sredini (umesto levo)
+     (panel koji ima summary + actions)
+     ========================================================= */
+
+  .berg-panel-card h4 {
+    text-align: center !important;
+  }
+
+  /* prebij layout u kolonu na telefonu */
+  .berg-panel-card:has(.berg-summary):has(.berg-actions-row) {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* naslov u panelu centriraj */
+  .berg-panel-card:has(.berg-summary):has(.berg-actions-row)>h2,
+  .berg-panel-card:has(.berg-summary):has(.berg-actions-row)>h3,
+  .berg-panel-card:has(.berg-summary):has(.berg-actions-row) .berg-panel-title {
+    text-align: center !important;
+    width: 100%;
+    margin: 0 0 12px 0 !important;
+  }
+
+  /* i da dugmad ne “lebde” – lepo ispod, centrirana */
+  .berg-panel-card:has(.berg-summary):has(.berg-actions-row) .berg-actions-row {
+    width: 100%;
+    justify-content: center !important;
+    margin-top: 14px !important;
+  }
+}
+
+/* =========================================================
+   STEP 1 (MOBILE): naslov 100% centriran
+   (bez :has() radi na svim telefonima)
+   ========================================================= */
+@media (max-width: 767px) {
+
+  /* gađamo samo STEP 1 */
+  .berg-step-panel[data-step-panel="1"] .berg-panel-card>h4 {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+
+    /* ubij sve što može da ga pomera ulevo/desno */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    float: none !important;
+  }
+
+  /* opciono: ako ti tema stavlja text-align:left na card, ovo ga “zakuca” */
+  .berg-step-panel[data-step-panel="1"] .berg-panel-card {
+    text-align: center;
+  }
+
+  /* ali summary može ostati “normalno” poravnat ako želiš */
+  .berg-step-panel[data-step-panel="1"] .berg-summary {
+    text-align: left;
+    /* promeni u center ako hoćeš sve centrirano */
+  }
+
+  /* dugmad centriraj */
+  .berg-step-panel[data-step-panel="1"] .berg-actions-row {
+    justify-content: center !important;
+  }
+}
+
+/* MOBILE: centriraj CTA dugmad */
+@media (max-width: 767px) {
+  .btn-trigger.d-flex {
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  .btn-trigger.d-flex .vs-btn {
+    width: 100%;
+    max-width: 320px;
+    /* po želji 280–360px */
+    text-align: center;
+  }
+}
+
+/* ===== Coverage Overview Table (TAB 1 / #rescue) ===== */
+:root {
+  --cov-amount-col: 220px;
+  /* po potrebi 180-260px */
+}
+
+/* BELA KUTIJA kao "Useful links" */
+.coverage-table-box {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 12px;
+  padding: 32px 34px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .06);
+}
+
+/* bootstrap accordion reset unutar kutije */
+.coverage-table-box .accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-width: 0;
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.coverage-table .title-area p {
+  opacity: .85;
+}
+
+/* header row */
+.coverage-table__head {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, var(--cov-amount-col));
+  gap: 24px;
+  padding: 10px 0 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+  font-weight: 700;
+}
+
+.coverage-table__col--right {
+  text-align: right;
+}
+
+/* accordion rows - "useful links" look (fine linije, ne dotted) */
+.coverage-accordion .accordion-item {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .10);
+  background: transparent;
+}
+
+.coverage-accordion .accordion-item:last-child {
+  border-bottom: 0;
+}
+
+.coverage-accordion .accordion-button {
+  width: 100%;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 18px 0;
+  border-radius: 0 !important;
+}
+
+.coverage-accordion .accordion-button::after {
+  display: none;
+}
+
+/* row layout: left title + right amount */
+.coverage-btn {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, var(--cov-amount-col));
+  gap: 24px;
+  align-items: center;
+}
+
+.coverage-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.coverage-icon {
+  width: 18px;
+  flex: 0 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.coverage-icon::before {
+  content: "+";
+  font-size: 20px;
+}
+
+.coverage-accordion .accordion-button:not(.collapsed) .coverage-icon::before {
+  content: "−";
+}
+
+.coverage-title {
+  font-weight: 700;
+  line-height: 1.15;
+  font-size: clamp(18px, 2.2vw, 30px);
+  text-transform: uppercase;
+}
+
+.coverage-amount {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 800;
+  line-height: 1.15;
+  font-size: clamp(18px, 2.2vw, 30px);
+  text-transform: uppercase;
+}
+
+/* OPEN body */
+.coverage-body {
+  padding: 0 0 18px 0;
+}
+
+.coverage-bodygrid {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, var(--cov-amount-col));
+  gap: 24px;
+  padding: 14px 0 0;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  /* fina linija kao separator */
+}
+
+.coverage-details p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .coverage-table-box {
+    padding: 18px 18px;
+  }
+
+  .coverage-table__head,
+  .coverage-btn,
+  .coverage-bodygrid {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-table__col--right,
+  .coverage-amount {
+    text-align: left;
+    white-space: normal;
+  }
+}
+
+/* ===== FIX: dropdown da se NE seče (overflow/clip) ===== */
+.berg-plan-card.tour-package-box,
+.berg-plan-body,
+.berg-plan-select {
+  overflow: visible !important;
+}
+
+.berg-select-ui {
+  position: relative;
+  z-index: 50;
+}
+
+.berg-select-ui__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 60;
+  max-height: 260px;
+  overflow: auto;
+}
+
+/* ===== FIX: Adult + (birth...) da na mobile bude poravnato levo (bez uvlačenja) ===== */
+.berg-select-ui__value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+.berg-opt-left {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* kad pukne u novi red */
+  gap: 8px;
+  align-items: baseline;
+}
+
+.berg-opt-meta {
+  margin-left: 0 !important;
+  /* ubij svako uvlačenje */
+}
+
+.berg-opt-right {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* ===== Scroll anchor da pokaže korake (header offset) ===== */
+#berg-order-start {
+  scroll-margin-top: 120px;
+  /* prilagodi ako header nije ~120px */
+}
+
+/* ===== STEP 1 layout kao "slika 1" ===== */
+.berg-panel-card--step1 {
+  padding: 18px !important;
+}
+
+.berg-step1-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.berg-summary--step1 {
+  background: rgba(117, 117, 79, .08);
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 12px;
+  padding: 14px 16px;
+  flex: 1 1 auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.berg-summary--step1 p {
+  margin: 0 !important;
+}
+
+.berg-summary--step1 p+p {
+  margin-top: 6px !important;
+}
+
+.berg-actions-row--step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.berg-actions-row--step1 .vs-btn {
+  min-width: 240px;
+}
+
+/* tablet/mob: dugmad ispod */
+@media (max-width: 991.98px) {
+  .berg-step1-wrap {
+    flex-direction: column;
+  }
+
+  .berg-actions-row--step1 {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .berg-actions-row--step1 .vs-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* =========================================================
+   STEP 1 (MOBILE): centriraj naslov + 2 dugmeta
+   ========================================================= */
+@media (max-width: 767px) {
+
+  /* naslov u STEP 1 */
+  .berg-panel-card--step1 h4,
+  .berg-step-panel[data-step-panel="1"] h4 {
+    text-align: center !important;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* dugmad centrirana */
+  .berg-actions-row--step1 {
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+
+  /* neka budu lepa i ista širina */
+  .berg-actions-row--step1 .vs-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+
+/* === Insurance intro: da izgleda kao referenca, bez template "capitalize" efekata === */
+.insurance-intro {
+  text-align: center;
+}
+
+.insurance-intro__title {
+  margin-bottom: 18px;
+}
+
+.insurance-intro__h2 {
+  margin: 0 0 6px 0;
+  text-transform: none !important;
+  /* ne daj template-u da menja */
+  letter-spacing: normal !important;
+}
+
+.insurance-intro__sub {
+  margin: 0;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+.insurance-intro__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  /* ovo centira blok (da ne “beži” ulevo) */
+  text-transform: none !important;
+  /* ubija Title Case */
+  letter-spacing: normal !important;
+}
+
+.insurance-intro__inner p {
+  text-transform: none !important;
+  /* osiguraj 100% */
+  line-height: 1.85;
+  margin: 0 0 18px 0;
+}
+
+.insurance-intro__link {
+  text-decoration: underline;
+}
+
+/* ===== Useful links (TAB 1) ===== */
+.insurance-links__h3 {
+  margin: 0 0 22px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #6aa21a;
+  /* kao na referenci (zeleno), promeni po potrebi */
+}
+
+.insurance-links__wrap {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .06);
+  overflow: hidden;
+}
+
+.insurance-link-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 26px 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.insurance-link-item:last-child {
+  border-bottom: 0;
+}
+
+.insurance-link-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insurance-link-item__icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+.insurance-link-item__title {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.insurance-link-item__titlelink {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.insurance-link-item__desc {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: rgba(0, 0, 0, .72);
+  line-height: 1.6;
+  max-width: 760px;
+}
+
+.insurance-link-item__bullet {
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 2px;
+  color: rgba(0, 0, 0, .7);
+}
+
+.insurance-link-item__cta {
+  justify-self: end;
+  /* dugme skroz desno */
+  white-space: nowrap;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .insurance-link-item {
+    grid-template-columns: 72px 1fr;
+    grid-template-areas:
+      "icon content"
+      "cta  cta";
+    gap: 16px;
+  }
+
+  .insurance-link-item__icon {
+    grid-area: icon;
+  }
+
+  .insurance-link-item__content {
+    grid-area: content;
+  }
+
+  .insurance-link-item__cta {
+    grid-area: cta;
+    justify-self: start;
+  }
+
+  .insurance-link-item__title {
+    font-size: 20px;
+  }
+}
+
+
+
+/* ===== BERG LOGIN (match membership form look) ===== */
+.berg-login .title-area {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.berg-login-subtext {
+  margin: 14px auto 0;
+  max-width: 680px;
+  opacity: .85;
+  line-height: 1.6;
+}
+
+/* White card container */
+.berg-login-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 14px;
+  padding: 32px 28px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .06);
+}
+
+/* Title */
+.berg-login-title {
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+/* Inputs (inherits Bootstrap if present, this just polishes) */
+.berg-login .form-label {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.berg-login .form-control {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, .18);
+  padding: 12px 14px;
+  height: 52px;
+}
+
+.berg-login .form-control:focus {
+  box-shadow: 0 0 0 .2rem rgba(117, 117, 79, .20);
+  border-color: rgba(117, 117, 79, .55);
+}
+
+/* Password field with toggle */
+.berg-pass-wrap {
+  position: relative;
+}
+
+.berg-pass-input {
+  padding-right: 86px;
+  /* space for toggle button */
+}
+
+.berg-pass-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: rgba(117, 117, 79, .10);
+  color: #3b3b2a;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 8px 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Row: remember + forgot */
+.berg-login-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.berg-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  margin: 0;
+}
+
+.berg-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: #75754f;
+}
+
+.berg-forgot {
+  color: #75754f;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.berg-login-foot {
+  opacity: .9;
+}
+
+.berg-login-foot a {
+  color: #75754f;
+  text-decoration: underline;
+  font-weight: 800;
+  margin-left: 6px;
+}
+
+/* Button spacing polish */
+.berg-login-btn {
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .berg-login-card {
+    padding: 24px 18px;
+  }
+
+  .berg-login .form-control {
+    height: 50px;
+  }
+}
+
+/* =========================================================
+   MEMBER ACCESS (4 tiles + details panel + popup)
+   Keep same vibe: radius, borders, typography
+   ========================================================= */
+
+.ma-wrap {
+  border-radius: 16px;
+}
+
+/* II) Tiles grid: ALWAYS 2 columns (desktop + phone) */
+.ma-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ma-tile {
+  background: rgba(255, 255, 255, .85);
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 16px;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  row-gap: 6px;
+  align-items: start;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, opacity .15s ease;
+}
+
+.ma-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .07);
+}
+
+.ma-tile.is-active {
+  border-color: rgba(0, 0, 0, .20);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .09);
+}
+
+.ma-tile__badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #75754f;
+  color: #fff;
+  font-weight: 900;
+  grid-row: 1 / span 2;
+}
+
+.ma-tile__title {
+  font-weight: 1000;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.ma-tile__hint {
+  opacity: .75;
+  line-height: 1.4;
+  font-size: 13px;
+}
+
+.ma-tile--strong .ma-tile__badge {
+  background: #5d5d3f;
+}
+
+/* SOS dominant (red) */
+.ma-tile--sos {
+  background: rgba(197, 22, 22, .07);
+  border-color: rgba(197, 22, 22, .22);
+}
+
+.ma-tile--sos .ma-tile__badge {
+  background: #c51616;
+}
+
+.ma-tile--sos .ma-tile__title {
+  color: #c51616;
+}
+
+.ma-tile--sos.is-active {
+  border-color: rgba(197, 22, 22, .45);
+  box-shadow: 0 14px 32px rgba(197, 22, 22, .12);
+}
+
+/* Details panel */
+.ma-panel {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ma-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  background: rgba(0, 0, 0, .01);
+}
+
+.ma-panel__title {
+  margin: 0;
+  font-weight: 1000;
+  letter-spacing: .2px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.ma-panel__close {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ma-panel__body {
+  padding: 16px;
+}
+
+.ma-panel__footer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 16px;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  background: rgba(0, 0, 0, .01);
+}
+
+/* Shared blocks */
+.ma-h4 {
+  margin: 0 0 12px 0;
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.ma-p {
+  margin: 0;
+  opacity: .85;
+  line-height: 1.7;
+}
+
+.ma-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ma-note {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, .10);
+  background: rgba(117, 117, 79, .08);
+  line-height: 1.7;
+  opacity: .95;
+}
+
+.ma-link {
+  text-decoration: underline;
+}
+
+.ma-card {
+  background: rgba(117, 117, 79, .06);
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.ma-card__title {
+  font-weight: 1000;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* SOS local list */
+.ma-grid2 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.ma-input {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, .18) !important;
+}
+
+.ma-list {
+  display: grid;
+  gap: 10px;
+}
+
+.ma-list__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.ma-list__row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ma-list__k {
+  font-weight: 800;
+  opacity: .85;
+}
+
+.ma-list__v {
+  font-weight: 1000;
+  text-decoration: underline;
+}
+
+/* =========================================================
+   SOS (TAB 1)
+   Goal:
+   - DESKTOP: back to previous clean table (like it was before)
+   - MOBILE: keep current stress-proof view (DO NOT CHANGE)
+   ========================================================= */
+
+:root {
+  --berg-olive: #75764e;
+  --berg-olive-soft: rgba(117, 118, 78, .10);
+  --berg-olive-border: rgba(117, 118, 78, .35);
+  --berg-border: rgba(0, 0, 0, .10);
+  --berg-border-soft: rgba(0, 0, 0, .08);
+  --berg-shadow: 0 12px 26px rgba(0, 0, 0, .06);
+  --berg-red: #c51616;
+
+  --control-h: 52px;
+}
+
+/* =========================
+   Title + top actions
+   ========================= */
+.ma-sos__h1 {
+  text-align: center;
+  font-weight: 1000;
+  letter-spacing: .2px;
+  margin: 0 0 14px;
+}
+
+.ma-sos__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 14px;
+}
+
+.ma-sos__btn {
+  min-width: 280px;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  font-weight: 1000 !important;
+  letter-spacing: .2px;
+  min-height: var(--control-h);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1.1 !important;
+}
+
+/* Default buttons (white bg + olive text) */
+.ma-sos .vs-btn.style7,
+.ma-sos .vs-btn.style7:visited {
+  background: #fff !important;
+  color: var(--berg-olive) !important;
+  border: 1px solid var(--berg-olive-border) !important;
+  box-shadow: 0 10px 22px rgba(117, 118, 78, .10) !important;
+}
+
+.ma-sos .vs-btn.style7:hover {
+  background: var(--berg-olive-soft) !important;
+}
+
+/* Primary emergency button stays red */
+.ma-sos__btn--primary {
+  background: var(--berg-red) !important;
+  border-color: rgba(197, 22, 22, .35) !important;
+  color: #fff !important;
+  box-shadow: 0 14px 34px rgba(197, 22, 22, .22) !important;
+}
+
+.ma-sos__btn--primary:hover {
+  filter: brightness(.97);
+}
+
+/* Banner under buttons */
+.ma-sos__banner {
+  margin: 0 auto;
+  max-width: 860px;
+  text-align: center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  background: rgba(255, 255, 255, .88);
+}
+
+/* “No signal?” card */
+.ma-sos__mini {
+  max-width: 980px;
+  margin: 16px auto 0;
+  border-radius: 16px;
+  border: 1px solid var(--berg-border);
+  background: rgba(117, 117, 79, .06);
+  padding: 16px 18px;
+}
+
+.ma-sos__miniTitle {
+  font-weight: 1000;
+  margin-bottom: 6px;
+}
+
+.ma-sos__miniList {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.75;
+  opacity: .92;
+}
+
+/* =========================
+   Local list card
+   ========================= */
+.ma-sos__local {
+  margin-top: 20px;
+  border-radius: 16px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--berg-border);
+  box-shadow: var(--berg-shadow);
+}
+
+.ma-sos__localTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.ma-sos__localTitle {
+  font-weight: 1000;
+  margin: 0;
+}
+
+.ma-sos__sub {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: .78;
+  line-height: 1.5;
+}
+
+/* Cache pill */
+.ma-sos__cachePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: rgba(0, 0, 0, .02);
+  font-weight: 1000;
+  font-size: 13px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.ma-sos__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--berg-red);
+  box-shadow: 0 0 0 4px rgba(197, 22, 22, .12);
+}
+
+/* =========================
+   Tools row: search + buttons same height
+   ========================= */
+.ma-sos__tools {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: stretch;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.ma-sos__searchWrap {
+  min-width: 0;
+}
+
+.ma-sos__search {
+  border: 1px solid rgba(0, 0, 0, .18) !important;
+  border-radius: 14px !important;
+  padding: 0 14px !important;
+  height: var(--control-h) !important;
+  background: #fff !important;
+  display: flex;
+  align-items: center;
+}
+
+.ma-sos__hint {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: .75;
+}
+
+.ma-sos__dlWrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.ma-sos__dlBtn {
+  white-space: nowrap;
+  min-height: var(--control-h);
+  height: var(--control-h);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+  border-radius: 14px !important;
+  padding: 0 16px !important;
+  min-width: 190px;
+}
+
+.ma-sos__dlBtn--ghost {
+  background: #fff !important;
+  color: var(--berg-olive) !important;
+  border: 1px solid var(--berg-olive-border) !important;
+  box-shadow: none !important;
+}
+
+.ma-sos__count {
+  margin: 10px 0 14px;
+  font-weight: 1000;
+  opacity: .82;
+}
+
+/* =========================
+   RESCUE TABLE (DESKTOP = back to previous state)
+   ========================= */
+.ma-rescue-table {
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  background: #fff;
+  overflow: hidden;
+}
+
+.ma-rescue-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 140px 140px;
+  /* classic */
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.ma-rescue-row--head {
+  background: rgba(117, 117, 79, .08);
+  border-bottom: 1px solid rgba(0, 0, 0, .10);
+  font-weight: 1000;
+}
+
+.ma-rescue-body {
+  max-height: 540px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.ma-rescue-row:not(.ma-rescue-row--head) {
+  border-bottom: 1px solid var(--berg-border-soft);
+}
+
+.ma-rescue-row:last-child {
+  border-bottom: 0;
+}
+
+.ma-rescue-cell--right {
+  text-align: right;
+}
+
+/* ISO badge */
+.ma-iso-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-weight: 1000;
+  background: rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .10);
+  letter-spacing: .6px;
+}
+
+/* Desktop links = simple underline (previous look) */
+.ma-call {
+  font-weight: 1000;
+  text-decoration: underline;
+  color: #111;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  display: inline;
+}
+
+.ma-call--sar {
+  color: var(--berg-red);
+}
+
+/* Empty */
+.ma-rescue-empty {
+  padding: 12px 14px;
+  text-align: center;
+  font-weight: 1000;
+  opacity: .75;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+}
+
+/* =========================
+   Disclaimer + Reference
+   ========================= */
+.ma-sos__disclaimer {
+  margin-top: 18px;
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  background: rgba(0, 0, 0, .02);
+  padding: 12px 14px;
+}
+
+.ma-sos__disclaimerSummary {
+  cursor: pointer;
+  font-weight: 1000;
+  list-style: none;
+}
+
+.ma-sos__disclaimerSummary::-webkit-details-marker {
+  display: none;
+}
+
+.ma-sos__disclaimerSummary::after {
+  content: "▾";
+  float: right;
+  opacity: .65;
+}
+
+.ma-sos__disclaimer[open] .ma-sos__disclaimerSummary::after {
+  content: "▴";
+}
+
+.ma-sos__disclaimerBody {
+  margin-top: 12px;
+  opacity: .92;
+  line-height: 1.75;
+}
+
+.ma-sos__ref {
+  margin-top: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  background: rgba(117, 117, 79, .06);
+  padding: 12px 14px;
+}
+
+.ma-sos__refTitle {
+  font-weight: 1000;
+  margin-bottom: 6px;
+}
+
+.ma-sos__refText {
+  opacity: .9;
+  line-height: 1.75;
+}
+
+.ma-link {
+  text-decoration: underline;
+  color: var(--berg-olive);
+}
+
+/* =========================
+   Bottom banner
+   ========================= */
+.ma-bottom-banner {
+  margin-top: 18px;
+  border-radius: 16px;
+  border: 1px solid var(--berg-border);
+  background: #fff;
+  box-shadow: var(--berg-shadow);
+  padding: 14px;
+}
+
+.ma-bottom-banner__inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.ma-bottom-banner__title {
+  font-weight: 1000;
+  line-height: 1.35;
+}
+
+.ma-bottom-banner__meta {
+  margin-top: 6px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  opacity: .9;
+}
+
+.ma-bottom-banner__brand {
+  font-weight: 1000;
+}
+
+.ma-bottom-banner__phone {
+  text-decoration: underline;
+  font-weight: 1000;
+  color: var(--berg-olive);
+}
+
+.ma-bottom-banner__btn {
+  background: #fff !important;
+  color: var(--berg-olive) !important;
+  border: 1px solid var(--berg-olive-border) !important;
+  border-radius: 14px !important;
+  padding: 0 16px !important;
+  height: var(--control-h) !important;
+  min-height: var(--control-h) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 1000 !important;
+  box-shadow: 0 10px 22px rgba(117, 118, 78, .10) !important;
+}
+
+.ma-bottom-banner__btn:hover {
+  background: var(--berg-olive-soft) !important;
+}
+
+/* =========================================================
+   MOBILE ONLY – keep EXACTLY the current phone behaviour
+   (All “stress-proof” visuals live ONLY here)
+   ========================================================= */
+@media (max-width: 767px) {
+  .ma-sos__btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ma-sos__tools {
+    grid-template-columns: 1fr;
+  }
+
+  .ma-sos__dlWrap {
+    justify-content: flex-start;
+  }
+
+  .ma-sos__dlBtn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* 4 columns compact on mobile */
+  .ma-rescue-row {
+    grid-template-columns: 64px minmax(120px, 1fr) 92px 120px;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .ma-rescue-row .ma-rescue-cell:nth-child(2) {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* mobile phone area highlight */
+  .ma-rescue-row .ma-rescue-cell:nth-child(3),
+  .ma-rescue-row .ma-rescue-cell:nth-child(4) {
+    text-align: right;
+    padding-left: 10px;
+    border-left: 1px solid rgba(0, 0, 0, .06);
+    background: rgba(117, 118, 78, .04);
+  }
+
+  .ma-rescue-row--head .ma-rescue-cell:nth-child(3),
+  .ma-rescue-row--head .ma-rescue-cell:nth-child(4) {
+    background: rgba(117, 118, 78, .08);
+  }
+
+  /* mobile call chips */
+  .ma-call {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    padding: 5px 8px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, .03);
+    border: 1px solid rgba(0, 0, 0, .08);
+    font-size: 13px;
+  }
+
+  .ma-call:hover {
+    background: rgba(117, 118, 78, .10);
+    border-color: rgba(117, 118, 78, .25);
+  }
+
+  .ma-call--sar {
+    color: var(--berg-red);
+    border-color: rgba(197, 22, 22, .18);
+    background: rgba(197, 22, 22, .06);
+  }
+
+  /* EMG/SAR badges */
+  .ma-rescue-row .ma-rescue-cell:nth-child(3) .ma-call::before {
+    content: "EMG";
+    font-size: 10px;
+    font-weight: 1000;
+    letter-spacing: .4px;
+    color: var(--berg-olive);
+    border: 1px solid rgba(117, 118, 78, .30);
+    background: rgba(117, 118, 78, .10);
+    padding: 2px 6px;
+    border-radius: 999px;
+  }
+
+  .ma-rescue-row .ma-rescue-cell:nth-child(4) .ma-call::before {
+    content: "SAR";
+    font-size: 10px;
+    font-weight: 1000;
+    letter-spacing: .4px;
+    color: var(--berg-red);
+    border: 1px solid rgba(197, 22, 22, .25);
+    background: rgba(197, 22, 22, .08);
+    padding: 2px 6px;
+    border-radius: 999px;
+  }
+
+  .ma-bottom-banner__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .ma-bottom-banner__btn {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   TAB 2 – My Emergency Documents (premium, consistent with SOS)
+   Copy/paste – scoped only to .ma-docs (won't affect other tabs)
+   ========================================================= */
+
+.ma-docs {
+  --berg-olive: #75764e;
+  --berg-olive-soft: rgba(117, 118, 78, .10);
+  --berg-olive-border: rgba(117, 118, 78, .35);
+  --berg-border: rgba(0, 0, 0, .10);
+  --berg-border-soft: rgba(0, 0, 0, .08);
+  --berg-shadow: 0 12px 26px rgba(0, 0, 0, .06);
+  --berg-red: #c51616;
+  --control-h: 52px;
+}
+
+/* Title */
+.ma-docs__h1 {
+  text-align: center;
+  font-weight: 1000;
+  letter-spacing: .2px;
+  margin: 0 0 14px;
+}
+
+/* Layout grid */
+.ma-docs__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+/* Make cards look like SOS cards (even if global .ma-card is weak) */
+.ma-docs .ma-card {
+  border-radius: 16px;
+  border: 1px solid var(--berg-border);
+  background: #fff;
+  box-shadow: var(--berg-shadow);
+  padding: 18px;
+}
+
+.ma-docs .ma-card__title {
+  font-weight: 1000;
+  letter-spacing: .2px;
+  margin: 0 0 10px;
+}
+
+.ma-docs .ma-p {
+  margin: 0 0 12px;
+  opacity: .85;
+  line-height: 1.6;
+}
+
+/* Buttons – same language/design as SOS: white bg + olive text */
+.ma-docs .vs-btn.style7,
+.ma-docs .vs-btn.style7:visited {
+  background: #fff !important;
+  color: var(--berg-olive) !important;
+  border: 1px solid var(--berg-olive-border) !important;
+  box-shadow: 0 10px 22px rgba(117, 118, 78, .10) !important;
+  border-radius: 14px !important;
+  font-weight: 1000 !important;
+  letter-spacing: .2px;
+}
+
+.ma-docs .vs-btn.style7:hover {
+  background: var(--berg-olive-soft) !important;
+}
+
+.ma-docs__btn {
+  height: var(--control-h);
+  min-height: var(--control-h);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 16px !important;
+  white-space: nowrap;
+}
+
+.ma-docs__btn--ghost {
+  box-shadow: none !important;
+}
+
+/* Tools row in "SHOW THIS TO RESCUERS" */
+.ma-docs__tools {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+/* Cache pill */
+.ma-docs__cachePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: rgba(0, 0, 0, .02);
+  font-weight: 1000;
+  font-size: 13px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.ma-docs__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--berg-red);
+  box-shadow: 0 0 0 4px rgba(197, 22, 22, .12);
+}
+
+.ma-docs__hint {
+  margin-top: 8px;
+  font-size: 13px;
+  opacity: .75;
+  line-height: 1.35;
+}
+
+/* Actions group on the right */
+.ma-docs__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+/* Viewer (if you open docs in-tab) */
+.ma-docs__viewer {
+  margin-top: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  overflow: hidden;
+  background: #fff;
+}
+
+.ma-docs__viewerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  background: rgba(117, 117, 79, .06);
+  border-bottom: 1px solid var(--berg-border-soft);
+}
+
+.ma-docs__viewerTitle {
+  font-weight: 1000;
+}
+
+.ma-docs__viewerClose {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: #fff;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+.ma-docs__viewerBody {
+  padding: 12px;
+}
+
+.ma-docs__viewerNotice {
+  border: 1px solid var(--berg-border);
+  background: rgba(255, 255, 255, .92);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  opacity: .92;
+}
+
+.ma-docs__iframe {
+  width: 100%;
+  height: 480px;
+  border: 1px solid var(--berg-border);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.ma-docs__viewerFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+/* =========================
+   EMERGENCY ID CARD styling
+   ========================= */
+.ma-idcard {
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  background: rgba(117, 117, 79, .04);
+  padding: 14px;
+}
+
+.ma-idcard__top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ma-idcard__photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: #fff;
+  flex: 0 0 auto;
+}
+
+.ma-idcard__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ma-idcard__name {
+  font-weight: 1000;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.ma-idcard__meta {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: .8;
+}
+
+/* Key-value rows */
+.ma-idcard__kv .ma-kv__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-top: 1px solid var(--berg-border-soft);
+}
+
+.ma-idcard__kv .ma-kv__row:first-child {
+  border-top: 0;
+}
+
+.ma-idcard__kv .ma-kv__row span {
+  opacity: .75;
+}
+
+.ma-idcard__kv .ma-kv__row strong {
+  font-weight: 1000;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.ma-docs__note {
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--berg-border);
+  background: rgba(255, 255, 255, .92);
+  padding: 10px 12px;
+  font-weight: 900;
+}
+
+.ma-docs__idActions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Make spacing consistent even if mt-15 class is missing/weak */
+.ma-docs .mt-15 {
+  margin-top: 14px !important;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 991px) {
+  .ma-docs__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .ma-docs__tools {
+    grid-template-columns: 1fr;
+  }
+
+  .ma-docs__actions {
+    justify-content: flex-start;
+  }
+
+  .ma-docs__btn {
+    width: 100%;
+  }
+
+  .ma-docs__iframe {
+    height: 420px;
+  }
+
+  .ma-idcard__kv .ma-kv__row strong {
+    white-space: normal;
+    /* allow wrap on very small screens */
+  }
+}
+
+/* =========================================================
+   TAB 3 – Report Accident (NEW, with Battery section)
+   Scoped to .ma-accident to avoid breaking other tabs
+   ========================================================= */
+
+.ma-accident {
+  --berg-olive: #75764e;
+  --berg-olive-soft: rgba(117, 118, 78, .10);
+  --berg-olive-border: rgba(117, 118, 78, .35);
+  --berg-border: rgba(0, 0, 0, .10);
+  --berg-border-soft: rgba(0, 0, 0, .08);
+  --berg-shadow: 0 12px 26px rgba(0, 0, 0, .06);
+  --berg-red: #c51616;
+  --control-h: 52px;
+}
+
+.ma-accident__h1 {
+  text-align: center;
+  font-weight: 1000;
+  letter-spacing: .2px;
+  margin: 0 0 14px;
+}
+
+/* Card polish (if global ma-card is minimal) */
+.ma-accident .ma-card {
+  border-radius: 16px;
+  border: 1px solid var(--berg-border);
+  background: #fff;
+  box-shadow: var(--berg-shadow);
+  padding: 18px;
+}
+
+.ma-accident__title {
+  font-weight: 1000;
+  letter-spacing: .2px;
+  margin: 0 0 10px;
+}
+
+.ma-accident__p {
+  margin: 0 0 12px;
+  opacity: .86;
+  line-height: 1.6;
+}
+
+/* Buttons: white bg + olive text (consistent) */
+.ma-accident .vs-btn.style7,
+.ma-accident .vs-btn.style7:visited {
+  background: #fff !important;
+  color: var(--berg-olive) !important;
+  border: 1px solid var(--berg-olive-border) !important;
+  box-shadow: 0 10px 22px rgba(117, 118, 78, .10) !important;
+  border-radius: 14px !important;
+  font-weight: 1000 !important;
+  letter-spacing: .2px;
+}
+
+.ma-accident .vs-btn.style7:hover {
+  background: var(--berg-olive-soft) !important;
+}
+
+.ma-accident__btn {
+  height: var(--control-h);
+  min-height: var(--control-h);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 16px !important;
+  white-space: nowrap;
+  line-height: 1.1 !important;
+}
+
+.ma-accident__btn--wide {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* Actions row */
+.ma-accident__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Quick “Call 112” pill */
+.ma-accident__quick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--control-h);
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px dashed rgba(117, 118, 78, .45);
+  background: rgba(117, 118, 78, .06);
+  font-weight: 1000;
+  text-decoration: none;
+  color: var(--berg-olive);
+}
+
+.ma-accident__hint {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: .76;
+  line-height: 1.35;
+}
+
+/* =========================
+   NEW: Battery saver section
+   ========================= */
+.ma-accident__battery {
+  margin-top: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(197, 22, 22, .18);
+  background: rgba(197, 22, 22, .06);
+  padding: 14px 14px;
+}
+
+.ma-accident__batteryTitle {
+  font-weight: 1000;
+  margin-bottom: 6px;
+}
+
+.ma-accident__batteryText {
+  opacity: .9;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.ma-accident__batteryList {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.7;
+  opacity: .95;
+}
+
+.ma-accident__batteryList li {
+  margin: 4px 0;
+}
+
+.ma-accident__batteryNote {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, .10);
+  background: rgba(255, 255, 255, .70);
+  font-weight: 1000;
+}
+
+/* =========================
+   Step 2 contact block
+   ========================= */
+.ma-accident__contact {
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  background: rgba(117, 118, 78, .05);
+  padding: 14px;
+}
+
+.ma-accident__brand {
+  font-weight: 1000;
+  margin-bottom: 8px;
+}
+
+.ma-accident__contactLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--berg-border-soft);
+}
+
+.ma-accident__contactLine:first-of-type {
+  border-top: 0;
+}
+
+.ma-accident__label {
+  opacity: .75;
+}
+
+.ma-accident__value {
+  font-weight: 1000;
+  text-decoration: underline;
+  color: #111;
+}
+
+.ma-accident__micro {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(197, 22, 22, .18);
+  background: rgba(197, 22, 22, .06);
+  font-weight: 900;
+  color: #111;
+}
+
+/* =========================
+   Step 3: online/offline UI
+   ========================= */
+.ma-accident__online {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: rgba(0, 0, 0, .02);
+  font-weight: 1000;
+  font-size: 13px;
+  user-select: none;
+  margin-bottom: 12px;
+}
+
+.ma-accident__onlineDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #999;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, .08);
+}
+
+.ma-accident__offline {
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--berg-border);
+  background: rgba(255, 255, 255, .92);
+  padding: 10px 12px;
+  font-weight: 900;
+}
+
+/* Divider + details */
+.ma-accident__divider {
+  height: 1px;
+  background: var(--berg-border-soft);
+  margin: 16px 0;
+}
+
+.ma-accident__detailsTitle {
+  font-weight: 1000;
+  margin-bottom: 8px;
+}
+
+.ma-accident__detailsP {
+  margin: 0 0 10px;
+  opacity: .9;
+  line-height: 1.65;
+}
+
+.ma-accident__inlineJump {
+  margin-left: 8px;
+  font-weight: 1000;
+  border-radius: 999px;
+  border: 1px solid var(--berg-olive-border);
+  background: rgba(117, 118, 78, .08);
+  color: var(--berg-olive);
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+@media (max-width: 767px) {
+  .ma-accident__btn {
+    width: 100%;
+  }
+
+  .ma-accident__quick {
+    width: 100%;
+  }
+
+  .ma-accident__contactLine {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ma-accident__value {
+    text-align: left;
+    word-break: break-word;
+  }
+}
+
+/* =========================================================
+   TAB 4 — HELPLINE (Activation Required)
+   Matches SOS / Docs / Accident styling
+   Notes:
+   - Uses existing .ma-card/.ma-note/.vs-btn.style7 baseline styles from theme
+   - Only adds “helpline” specific polish + spacing
+   ========================================================= */
+
+:root {
+  --berg-olive: #75764e;
+  --berg-olive-soft: rgba(117, 118, 78, .10);
+  --berg-olive-border: rgba(117, 118, 78, .35);
+  --berg-border: rgba(0, 0, 0, .10);
+  --berg-shadow: 0 12px 26px rgba(0, 0, 0, .06);
+  --berg-red: #c51616;
+
+  --control-h: 52px;
+  /* align button heights (same as SOS) */
+}
+
+/* Section title */
+.ma-helpline__h1 {
+  text-align: center;
+  font-weight: 1000;
+  letter-spacing: .2px;
+  margin: 0 0 14px;
+}
+
+/* Card spacing like other tabs */
+.ma-helpline .ma-card {
+  border-radius: 16px;
+  border: 1px solid var(--berg-border);
+  box-shadow: var(--berg-shadow);
+  background: #fff;
+}
+
+.ma-helpline .ma-card+.ma-card {
+  margin-top: 14px;
+  /* consistent spacing between cards */
+}
+
+/* Activation header row */
+.ma-helpline__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.ma-helpline__title {
+  font-weight: 1000;
+  margin: 0;
+}
+
+.ma-helpline__sub {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: .78;
+  line-height: 1.55;
+}
+
+/* Info pill (activation hint) */
+.ma-helpline__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: rgba(0, 0, 0, .02);
+  font-weight: 1000;
+  font-size: 13px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.ma-helpline__pillDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--berg-red);
+  box-shadow: 0 0 0 4px rgba(197, 22, 22, .12);
+}
+
+/* Buttons layout */
+.ma-helpline__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: stretch;
+  margin-top: 8px;
+}
+
+/* Make buttons same height + center content */
+.ma-helpline__btn {
+  height: var(--control-h);
+  min-height: var(--control-h);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 14px !important;
+  padding: 0 16px !important;
+  font-weight: 1000 !important;
+  letter-spacing: .2px;
+  text-align: center;
+  line-height: 1.1 !important;
+}
+
+/* Default button look (white bg + olive text) */
+.ma-helpline .vs-btn.style7,
+.ma-helpline .vs-btn.style7:visited {
+  background: #fff !important;
+  color: var(--berg-olive) !important;
+  border: 1px solid var(--berg-olive-border) !important;
+  box-shadow: 0 10px 22px rgba(117, 118, 78, .10) !important;
+}
+
+.ma-helpline .vs-btn.style7:hover {
+  background: var(--berg-olive-soft) !important;
+}
+
+/* Activation button can be slightly emphasized */
+.ma-helpline__btn--primary {
+  box-shadow: 0 14px 28px rgba(117, 118, 78, .16) !important;
+}
+
+/* Offline call button gets a subtle “phone” feel */
+.ma-helpline__btn--call {
+  position: relative;
+}
+
+.ma-helpline__btn--call::before {
+  content: "OFFLINE";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 10px;
+  font-weight: 1000;
+  letter-spacing: .5px;
+  color: rgba(0, 0, 0, .55);
+  background: rgba(0, 0, 0, .04);
+  border: 1px solid rgba(0, 0, 0, .08);
+  padding: 3px 7px;
+  border-radius: 999px;
+}
+
+@media (max-width: 991px) {
+  .ma-helpline__btn--call::before {
+    display: none;
+  }
+
+  /* avoid clutter on small */
+}
+
+/* Inline links */
+.ma-helpline__link {
+  text-decoration: underline;
+  color: var(--berg-olive);
+  font-weight: 900;
+}
+
+/* More info line spacing */
+.ma-helpline__note {
+  margin-top: 12px;
+}
+
+/* Explanation block */
+.ma-helpline__explain {
+  line-height: 1.75;
+  opacity: .92;
+}
+
+/* Extra “cold + altitude” tip card */
+.ma-helpline__tip {
+  border-radius: 14px;
+  border: 1px solid var(--berg-border);
+  background: rgba(117, 118, 78, .06);
+  padding: 14px 16px;
+}
+
+.ma-helpline__tipTitle {
+  font-weight: 1000;
+  margin-bottom: 6px;
+}
+
+.ma-helpline__tipText {
+  margin: 0;
+  opacity: .92;
+  line-height: 1.75;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .ma-helpline__actions {
+    grid-template-columns: 1fr;
+  }
+
+  .ma-helpline__btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   Rotating tips carousel (inside GET READY FOR THE TOUR)
+   Desktop: 3 cards visible
+   Mobile: 1 card visible + auto every 4s
+   ========================================================= */
+
+:root {
+  --berg-olive: #75764e;
+  --berg-olive-soft: rgba(117, 118, 78, .10);
+  --berg-olive-border: rgba(117, 118, 78, .35);
+  --berg-border: rgba(0, 0, 0, .10);
+  --berg-shadow: 0 12px 26px rgba(0, 0, 0, .06);
+}
+
+.ma-tips {
+  margin-top: 18px;
+}
+
+.ma-tips__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ma-tips__label {
+  font-weight: 1000;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--berg-olive);
+  opacity: .95;
+}
+
+.ma-tips__nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ma-tips__arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--berg-olive-border);
+  background: #fff;
+  color: var(--berg-olive);
+  font-weight: 1000;
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 22px rgba(117, 118, 78, .10);
+  transition: transform .12s ease, background .12s ease;
+}
+
+.ma-tips__arrow:hover {
+  background: var(--berg-olive-soft);
+  transform: translateY(-1px);
+}
+
+.ma-tips__arrow:active {
+  transform: translateY(0);
+}
+
+/* viewport */
+.ma-tips__viewport {
+  border-radius: 16px;
+  border: 1px solid var(--berg-border);
+  background: rgba(255, 255, 255, .75);
+  box-shadow: var(--berg-shadow);
+  overflow: hidden;
+}
+
+/* track */
+.ma-tips__track {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  will-change: transform;
+  transition: transform .35s ease;
+}
+
+/* card */
+.ma-tip-card {
+  flex: 0 0 calc((100% - 24px) / 3);
+  /* 3 visible, gaps 12*2 */
+  min-width: 0;
+}
+
+.ma-tip-card__inner {
+  height: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, .10);
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .05);
+  padding: 14px 14px;
+}
+
+.ma-tip-card__title {
+  font-weight: 1000;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.ma-tip-card__text {
+  opacity: .9;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* dots */
+.ma-tips__dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.ma-tips__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 1px solid var(--berg-olive-border);
+  background: rgba(117, 118, 78, .14);
+}
+
+.ma-tips__dot.is-active {
+  width: 22px;
+  background: var(--berg-olive);
+  border-color: var(--berg-olive);
+}
+
+/* Mobile: show 1 card */
+@media (max-width: 767px) {
+  .ma-tip-card {
+    flex: 0 0 100%;
+  }
+
+  .ma-tips__track {
+    padding: 12px;
+  }
+
+  .ma-tip-card__inner {
+    padding: 14px;
+  }
+}
+
+
+/* KV list */
+.ma-kv {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ma-kv__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.ma-kv__row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ma-kv__row span {
+  opacity: .75;
+}
+
+/* Prepare for tour */
+.ma-prep {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.ma-prep__title {
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ma-prep__text {
+  opacity: .9;
+  line-height: 1.7;
+}
+
+.ma-prep__list {
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+  line-height: 1.85;
+  opacity: .95;
+}
+
+.ma-prep__note {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, .10);
+  background: rgba(0, 0, 0, .04);
+  line-height: 1.7;
+}
+
+/* Responsive tweaks (tiles stay 2 columns even on phone) */
+@media (max-width: 767px) {
+  .ma-tile {
+    min-height: 105px;
+    padding: 14px;
+  }
+
+  .ma-tile__title {
+    font-size: 14px;
+  }
+
+  .ma-tile__hint {
+    font-size: 12px;
+  }
+
+  .ma-grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================
+   BERG / MA POPUP — polished UI
+   =========================== */
+
+/* keep your centering logic */
+.ma-pop[hidden] {
+  display: none !important;
+}
+
+.ma-pop {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+}
+
+.ma-pop__backdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, .58) !important;
+  backdrop-filter: blur(2px);
+}
+
+/* Dialog */
+.ma-pop__dialog {
+  position: fixed !important;
+  left: 50vw !important;
+  top: 50vh !important;
+  transform: translate(-50%, -50%) !important;
+
+  width: min(680px, calc(100% - 28px)) !important;
+  max-height: calc(100dvh - 28px) !important;
+  overflow: auto !important;
+
+  background: rgba(255, 255, 255, .98) !important;
+  border-radius: 18px !important;
+  border: 1px solid rgba(0, 0, 0, .10) !important;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, .35) !important;
+
+  padding: 22px 22px 18px !important;
+}
+
+/* fallback */
+@supports not (height: 100dvh) {
+  .ma-pop__dialog {
+    max-height: calc(100vh - 28px) !important;
+  }
+}
+
+/* Close button — cleaner & on-brand */
+.ma-pop__close {
+  position: absolute !important;
+  right: 14px !important;
+  top: 14px !important;
+  width: 42px !important;
+  height: 42px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  border-radius: 14px !important;
+  border: 1px solid rgba(0, 0, 0, .10) !important;
+  background: rgba(255, 255, 255, .95) !important;
+
+  font-size: 22px !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.ma-pop__close:hover {
+  transform: translateY(-1px);
+  background: #fff !important;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .12);
+}
+
+/* Title */
+.ma-pop__title {
+  text-align: center;
+  font-weight: 1000;
+  font-size: 22px;
+  letter-spacing: .2px;
+  margin: 0 0 12px 0;
+  color: rgba(0, 0, 0, .88);
+}
+
+/* Little top “badge” line for hierarchy */
+.ma-pop__dialog::before {
+  content: "EMERGENCY MODE";
+  display: block;
+  text-align: center;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: .18em;
+  opacity: .65;
+  margin-bottom: 6px;
+}
+
+/* List styling */
+.ma-pop__list {
+  margin: 0 auto 14px;
+  padding: 0;
+  list-style: none;
+  max-width: 520px;
+  display: grid;
+  gap: 8px;
+}
+
+.ma-pop__list li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 10px;
+  align-items: start;
+
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  background: rgba(117, 117, 79, .07);
+  /* your olive tone */
+  border: 1px solid rgba(0, 0, 0, .08);
+  line-height: 1.55;
+  color: rgba(0, 0, 0, .80);
+  font-weight: 600;
+}
+
+.ma-pop__list li::before {
+  content: "✓";
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+
+  background: rgba(117, 117, 79, .18);
+  border: 1px solid rgba(117, 117, 79, .35);
+  color: #3b3b24;
+  font-weight: 1000;
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+/* Quote/note box */
+.ma-pop__note {
+  max-width: 520px;
+  margin: 0 auto 14px;
+
+  padding: 14px 14px;
+  border-radius: 14px;
+  background: rgba(117, 117, 79, .08);
+  border: 1px solid rgba(0, 0, 0, .10);
+
+  font-style: italic;
+  line-height: 1.7;
+  text-align: center;
+  color: rgba(0, 0, 0, .78);
+}
+
+/* Actions centered */
+.ma-pop__actions {
+  max-width: 420px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+/* Make button look consistent (theme button already exists, just polish layout) */
+.ma-pop__actions .vs-btn {
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+/* Disclaimer small */
+.ma-pop__disclaimer {
+  font-size: 13px;
+  opacity: .70;
+  line-height: 1.4;
+}
+
+/* Small screens polish */
+@media (max-width: 767px) {
+  .ma-pop__dialog {
+    padding: 18px 16px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  .ma-pop__title {
+    font-size: 20px;
+  }
+
+  .ma-pop__list li {
+    padding: 10px 10px;
+  }
+
+  .ma-pop__note {
+    padding: 12px 12px;
+  }
+}
+
+/* BENEFITS SEGMENTS */
+
+.benefit-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, .10);
+  padding: 18px;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .06);
+}
+
+.benefit-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.benefit-card__logo {
+  height: 42px;
+  width: auto;
+  max-width: 70%;
+  object-fit: contain;
+}
+
+.benefit-card__badge {
+  font-weight: 800;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(117, 118, 78, .12);
+  border: 1px solid rgba(117, 118, 78, .25);
+  white-space: nowrap;
+}
+
+.benefit-card__title {
+  margin: 0 0 8px;
+}
+
+.benefit-card__desc {
+  margin: 0 0 14px;
+  opacity: .9;
+  line-height: 1.6;
+}
+
+.benefit-card__cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.benefit-card__cta.is-disabled {
+  pointer-events: none;
+  opacity: .6;
+  filter: grayscale(1);
+}
+
+/* Card container */
+.benefit-card {
+  position: relative;
+  /* BITNO: anchor za badge */
+  overflow: hidden;
+  /* da ništa ne štrči */
+}
+
+/* TOP zona – logo bez “guranja” badge-a */
+.benefit-card__top {
+  display: block;
+  /* više nije flex */
+  margin-bottom: 12px;
+  padding-right: 86px;
+  /* prostor da tekst/logo ne uđe pod badge */
+}
+
+/* Logo: neka stane normalno i ne raste do besvesti */
+.benefit-card__logo {
+  display: block;
+  max-width: 100%;
+  height: 56px;
+  /* ili 48px, kako ti lepše */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Badge: uvek gore desno */
+.benefit-card__badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+/* (Opcionalno) ako ti je logo “visok” kao na slici, da ne razvuče karticu */
+.benefit-card__top img {
+  max-height: 70px;
+}
+
+/* =========================================================
+   Health & Custom Upgrades (scoped)
+   Target: #benefits-health
+   ========================================================= */
+
+#benefits-health .berg-note {
+  background: rgba(0, 0, 0, .03);
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-top: 18px;
+}
+
+#benefits-health .berg-knox-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, .08);
+  background: #fff;
+}
+
+#benefits-health .berg-knox-col {
+  padding: 18px 18px 10px;
+  border-right: 1px solid rgba(0, 0, 0, .08);
+}
+
+#benefits-health .berg-knox-col:last-child {
+  border-right: 0;
+}
+
+#benefits-health .berg-knox-col__head {
+  font-weight: 900;
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, .03);
+  border-radius: 12px;
+}
+
+#benefits-health .berg-knox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#benefits-health .berg-knox-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 6px;
+  border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+
+#benefits-health .berg-knox-item:last-child {
+  border-bottom: 0;
+}
+
+#benefits-health .berg-knox-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex: 0 0 28px;
+  opacity: .95;
+}
+
+#benefits-health .berg-knox-title {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#benefits-health .berg-knox-sub {
+  font-size: 13px;
+  opacity: .78;
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+/* Bottom box (text + CTA) */
+#benefits-health .berg-bottom-box {
+  margin-top: 18px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+#benefits-health .berg-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+#benefits-health .berg-link {
+  font-weight: 800;
+  text-decoration: underline;
+  color: inherit;
+  opacity: .9;
+}
+
+/* Ako ti tema "gazi" dugme, ovo ga stabilizuje bez menjanja tvog .vs-btn */
+#benefits-health .berg-actions .vs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  #benefits-health .berg-knox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #benefits-health .berg-knox-col {
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+  }
+
+  #benefits-health .berg-knox-col:last-child {
+    border-bottom: 0;
+  }
+
+  #benefits-health .berg-actions .vs-btn {
+    width: 100%;
+  }
+}
+
+
+/* ===== Insurance conditions (FORCE) ===== */
+#insurance-conditions {
+  --berg-accent: #6f6b45;
+  --berg-border: rgba(0, 0, 0, .10);
+  --berg-soft: rgba(0, 0, 0, .04);
+  --berg-text: rgba(0, 0, 0, .85);
+}
+
+#insurance-conditions .ic-layout {
+  display: flex !important;
+  gap: 28px !important;
+  margin-top: 26px !important;
+}
+
+#insurance-conditions .ic-sidebar {
+  flex: 0 0 320px !important;
+}
+
+#insurance-conditions .ic-content {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+#insurance-conditions .ic-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  position: sticky !important;
+  top: 120px !important;
+}
+
+#insurance-conditions .ic-nav-item {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100% !important;
+  padding: 14px 14px !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--berg-border) !important;
+  background: #fff !important;
+  color: var(--berg-text) !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease !important;
+}
+
+#insurance-conditions .ic-nav-item:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .06) !important;
+}
+
+#insurance-conditions .ic-nav-item.is-active {
+  border-color: rgba(111, 107, 69, .45) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .08) !important;
+}
+
+#insurance-conditions .ic-nav-item.is-active::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 10px !important;
+  bottom: 10px !important;
+  width: 4px !important;
+  border-radius: 4px !important;
+  background: var(--berg-accent) !important;
+}
+
+#insurance-conditions .ic-step {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 900 !important;
+  border: 1px solid var(--berg-border) !important;
+  background: var(--berg-soft) !important;
+  flex: 0 0 32px !important;
+}
+
+#insurance-conditions .ic-nav-item.is-active .ic-step {
+  background: var(--berg-accent) !important;
+  border-color: var(--berg-accent) !important;
+  color: #fff !important;
+}
+
+#insurance-conditions .ic-label {
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+}
+
+#insurance-conditions .ic-panel {
+  background: #fff !important;
+  border: 1px solid var(--berg-border) !important;
+  border-radius: 18px !important;
+  padding: 18px !important;
+}
+
+#insurance-conditions .ic-panel[hidden] {
+  display: none !important;
+}
+
+#insurance-conditions .ic-breadcrumb {
+  font-size: 13px !important;
+  opacity: .78 !important;
+  margin-bottom: 10px !important;
+}
+
+#insurance-conditions .ic-sep {
+  margin: 0 8px !important;
+  opacity: .55 !important;
+}
+
+#insurance-conditions .ic-title {
+  margin: 0 0 14px !important;
+  font-weight: 900 !important;
+  letter-spacing: .02em !important;
+  text-transform: uppercase !important;
+  color: var(--berg-accent) !important;
+}
+
+#insurance-conditions .ic-body {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: var(--berg-text) !important;
+}
+
+#insurance-conditions .ic-body p {
+  margin: 0 0 14px !important;
+}
+
+#insurance-conditions .ic-source {
+  display: inline-block !important;
+  margin-top: 10px !important;
+  font-weight: 800 !important;
+  text-decoration: underline !important;
+  color: var(--berg-accent) !important;
+}
+
+/* Mobile: tabs gore */
+@media (max-width:991px) {
+  #insurance-conditions .ic-layout {
+    display: block !important;
+  }
+
+  #insurance-conditions .ic-sidebar {
+    width: 100% !important;
+    margin-bottom: 14px !important;
+  }
+
+  #insurance-conditions .ic-nav {
+    position: static !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    padding-bottom: 6px !important;
+    gap: 10px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  #insurance-conditions .ic-nav-item {
+    flex: 0 0 auto !important;
+    min-width: 240px !important;
+  }
+}
+
+@media (max-width:575px) {
+  #insurance-conditions .ic-nav-item {
+    min-width: 210px !important;
+  }
+
+  #insurance-conditions .ic-panel {
+    padding: 14px !important;
+  }
+}
+
+/* ✅ Mobile: sidebar stavke jedna ispod druge (bez horizontal scroll-a) */
+@media (max-width: 991px) {
+  #insurance-conditions .ic-nav {
+    flex-direction: column !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    gap: 10px !important;
+    padding-bottom: 0 !important;
+  }
+
+  #insurance-conditions .ic-nav-item {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+}
+
+/* INSURENCE PAGE */
+
+/* ================= Scope of coverage tabs (BERG) ================= */
+
+.ic-layout--scope {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.ic-sidebar {
+  width: 100%;
+}
+
+.ic-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: sticky;
+  top: 20px;
+}
+
+.ic-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, .10);
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+
+.ic-nav-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .06);
+}
+
+.ic-step {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+
+  background: #f0efe7;
+  color: #2b2b2b;
+  font-weight: 700;
+  flex: 0 0 34px;
+}
+
+.ic-label {
+  font-weight: 700;
+  color: #2b2b2b;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.ic-nav-item.is-active {
+  border-color: rgba(117, 117, 79, .55);
+  box-shadow: 0 12px 24px rgba(117, 117, 79, .12);
+}
+
+.ic-nav-item.is-active .ic-step {
+  background: #75754f;
+  color: #fff;
+}
+
+.ic-content {
+  min-width: 0;
+}
+
+.ic-panel {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 16px;
+  padding: 18px 18px;
+}
+
+.ic-panel+.ic-panel {
+  margin-top: 14px;
+}
+
+.ic-breadcrumb {
+  font-size: 13px;
+  color: rgba(0, 0, 0, .60);
+  margin-bottom: 10px;
+}
+
+.ic-sep {
+  padding: 0 6px;
+}
+
+.ic-title {
+  margin: 0 0 10px 0;
+  font-weight: 900;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.ic-body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #2b2b2b;
+}
+
+.ic-placeholder {
+  margin: 0 0 12px 0;
+}
+
+.ic-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #75754f;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.ic-source:hover {
+  opacity: .9;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 991px) {
+  .ic-layout--scope {
+    grid-template-columns: 1fr;
+  }
+
+  .ic-nav {
+    position: static;
+    top: auto;
+  }
+}
+
+@media (max-width: 575px) {
+
+  /* NA TELEFONU: paneli/dugmad JEDAN ISPOD DRUGOG (bez dva u redu) */
+  .ic-nav-item {
+    border-radius: 14px;
+    padding: 14px 14px;
+  }
+
+  .ic-label {
+    font-size: 14px;
+  }
+
+  .ic-panel {
+    border-radius: 16px;
+    padding: 16px;
+  }
+}
+
+/* ===== Custom dropdown (BERG) – aligned left/right + bold price ===== */
+
+.berg-select-ui {
+  position: relative;
+  width: 100%;
+}
+
+/* Button looks like your selects */
+.berg-select-ui__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 44px 10px 14px;
+
+  background: #fff;
+  cursor: pointer;
+
+  /* override your "text-align:center" rules */
+  text-align: left;
+}
+
+.berg-select-ui__value {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* left part */
+.berg-opt-left {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* right group: meta + price aligned to the far right */
+.berg-opt-right {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.berg-opt-meta {
+  opacity: .85;
+}
+
+.berg-opt-price {
+  font-weight: 800;
+}
+
+/* Chevron */
+.berg-select-ui__chev {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%2375754f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+/* Dropdown list */
+.berg-select-ui__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 50;
+
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .20);
+  border-radius: 12px;
+  padding: 6px;
+  margin: 0;
+  list-style: none;
+
+  max-height: 260px;
+  overflow: auto;
+
+  display: none;
+}
+
+/* open state */
+.berg-select-ui.is-open .berg-select-ui__list {
+  display: block;
+}
+
+.berg-select-ui__opt {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.berg-select-ui__opt:hover {
+  background: rgba(117, 117, 79, .10);
+}
+
+.berg-select-ui__opt[aria-selected="true"] {
+  background: rgba(117, 117, 79, .16);
+}
+
+@media (max-width: 575.98px) {
+
+  /* Zagrada ispod, ali poravnata tačno ispod "Adult" (bez uvlačenja) */
+  .berg-opt-meta {
+    display: block !important;
+    margin: 2px 0 0 0 !important;
+    /* skida margin-left */
+    padding: 0 !important;
+    /* za svaki slučaj */
+    text-indent: 0 !important;
+  }
+
+  /* da levi blok može u 2 reda normalno */
+  .berg-opt-left {
+    white-space: normal !important;
+  }
+}
+
+
+/* Levo: naziv + zagrada zajedno */
+.berg-opt-left {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Zagrada neka bude "mekša" */
+.berg-opt-meta {
+  opacity: .85;
+  margin-left: 8px;
+}
+
+/* Desno: samo cena */
+.berg-opt-right {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.berg-opt-price {
+  font-weight: 800;
+}
+
+/* =========================================================
+   FIX: Dropdown list seče parent (overflow hidden/clip)
+   ========================================================= */
+
+/* 1) Dozvoli dropdown-u da “izađe” iz kartice */
+.berg-plan-card,
+.berg-plan-card.tour-package-box,
+.berg-plan-body,
+.berg-plan-body.tour-package-content,
+.berg-plan-select,
+.berg-order-plans {
+  overflow: visible !important;
+}
+
+/* Ako je i na thumb-u ili nekom wrapperu overflow hidden */
+.tour-package-box,
+.tour-package-content {
+  overflow: visible !important;
+}
+
+/* 2) Osiguraj da dropdown lista bude iznad svega */
+.berg-select-ui {
+  position: relative;
+  z-index: 10;
+}
+
+.berg-select-ui__list {
+  z-index: 9999;
+}
+
+/* 3) Ako postoji neki parent sa overflow: clip (noviji browseri) */
+.berg-plan-card,
+.tour-package-box,
+.tour-package-content {
+  overflow: visible !important;
+  /* override clip/hidden */
+}
+
+/* 4) (Opcionalno) ako se i dalje seče zbog još višeg parenta (sekcija/kolona) */
+.vs-about,
+.vs-about .container,
+.vs-about .row,
+.vs-about [class*="col-"] {
+  overflow: visible;
+}
+
+/* Anchor target: kad skroluje na panel, ostavi prostor za sticky header */
+.ic-anchor {
+  display: block;
+  scroll-margin-top: 120px;
+  /* prilagodi ako ti je header veći/manji */
+}
+ 
