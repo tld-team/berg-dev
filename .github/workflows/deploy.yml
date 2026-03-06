@@ -1,0 +1,61 @@
+name: Deploy (main -> staging server)
+
+on:
+  push:
+    branches: ["main"]
+
+concurrency:
+  group: main-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      # OPCIONO:  
+      # (ja bih ovo ostavio upaljeno da niko ne zaboravi da builduje sa scss na css)
+      # - name: Setup Node
+      #   uses: actions/setup-node@v6
+      #   with:
+      #     node-version: "22"
+      # - name: Install Sass
+      #   run: npm i -g sass
+      # - name: Build CSS
+      #   run: sass assets/sass/style.scss:assets/css/style.css --style=compressed
+
+      - name: Deploy via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ vars.FTP_PORT }}
+          protocol: ftps
+
+          local-dir: ./
+          server-dir: ${{ vars.FTP_DIRECTORY }}
+
+          exclude: |
+            **/.git*
+            **/.github/**
+
+            # server-only / persistent
+            admin/uploads/**
+            admin/db.php
+            emergency/db.php
+            .env
+            .env.*
+
+            # runtime/logs
+            error_log
+            webhooks/*.log
+            webhooks/.membership_autoreply_sent.txt
+
+            # artifacts (po želji)
+            *.sql
+            *.zip
+            sass-watch.txt
+            _where.php
