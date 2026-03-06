@@ -34,8 +34,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ vars.FTP_PORT }}
           protocol: ftp
-   log-level: verbose
-    timeout: 120000
+          log-level: verbose
+          timeout: 120000
           local-dir: ./
           server-dir: ${{ vars.FTP_DIRECTORY }}
 
